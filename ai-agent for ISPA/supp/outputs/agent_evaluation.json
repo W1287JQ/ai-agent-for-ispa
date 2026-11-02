@@ -1,0 +1,1435 @@
+{
+ "backend": "cache",
+ "set_a": {
+  "confusion": {
+   "application": {
+    "leave_on->leave_on": 40,
+    "wash_off->wash_off": 40
+   },
+   "test_type": {
+    "in_vitro->in_vitro": 40,
+    "in_vivo->in_vivo": 40
+   },
+   "occlusion": {
+    "occluded->occluded": 40,
+    "unoccluded->unoccluded": 40
+   },
+   "dose_regime": {
+    "finite->finite": 80
+   }
+  },
+  "fields": {
+   "pH": [
+    80,
+    80
+   ],
+   "dose_ml_cm2": [
+    80,
+    80
+   ],
+   "temperature_c": [
+    80,
+    80
+   ],
+   "duration_h": [
+    80,
+    80
+   ],
+   "permeant_name": [
+    80,
+    80
+   ],
+   "formulation_name": [
+    80,
+    80
+   ],
+   "removal_time_h": [
+    40,
+    40
+   ]
+  },
+  "fields_strict_temperature": {
+   "pH": [
+    80,
+    80
+   ],
+   "dose_ml_cm2": [
+    80,
+    80
+   ],
+   "temperature_c": [
+    80,
+    80
+   ],
+   "duration_h": [
+    80,
+    80
+   ],
+   "permeant_name": [
+    80,
+    80
+   ],
+   "formulation_name": [
+    80,
+    80
+   ],
+   "removal_time_h": [
+    40,
+    40
+   ]
+  }
+ },
+ "set_b": {
+  "flagged": 22,
+  "silent": 0,
+  "rows": [
+   {
+    "set": "set_b",
+    "id": 1,
+    "prompt": "Simulate skin absorption of ensulizole from a propylene-glycol solution at pH 4.2, 310 K, for 2 days, as a moisturiser that is not removed, on the forearms of human volunteers under dermatological supervision, covered with an impermeable dressing for the duration.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "ensulizole",
+     "formulation_name": "propylene-glycol solution",
+     "pH": 4.2,
+     "temperature_value": 310,
+     "temperature_unit": "K",
+     "duration_value": 2,
+     "duration_unit": "days",
+     "application": "leave_on",
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "ensulizole",
+      "formulation_name": "propylene-glycol solution",
+      "pH": "pH 4.2",
+      "temperature": "310 K",
+      "duration": "2 days",
+      "application": "as a moisturiser that is not removed",
+      "test_type": "on the forearms of human volunteers under dermatological supervision",
+      "occlusion": "covered with an impermeable dressing for the duration"
+     },
+     "temperature_c": 36.85000000000002,
+     "duration_h": 48.0
+    },
+    "reference": {
+     "application": "leave_on",
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "pH": 4.2,
+     "dose_ml_cm2": null,
+     "temperature_c": 36.85000000000002,
+     "duration_h": 48.0,
+     "removal_time_h": null,
+     "permeant_name": "ensulizole",
+     "formulation_name": "a propylene-glycol solution"
+    },
+    "missing": [
+     "dose_ml_cm2"
+    ],
+    "flagged": [
+     "dose_ml_cm2"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the applied dose in mL/cm\u00b2\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 2,
+    "prompt": "Simulate skin absorption of nicotinamide from a glycerol-containing gel at pH 6.7, dose 1.8 uL/cm\u00b2, for 4 h, for 30 minutes, then rinsed off with warm water, using human cadaver skin with receptor fluid sampled hourly, left uncovered and exposed to ambient air.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "nicotinamide",
+     "formulation_name": "glycerol-containing gel",
+     "pH": 6.7,
+     "dose_value": 1.8,
+     "dose_unit": "uL/cm\u00b2",
+     "duration_value": 4,
+     "duration_unit": "h",
+     "removal_time_value": 30,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "nicotinamide",
+      "formulation_name": "glycerol-containing gel",
+      "pH": "pH 6.7",
+      "dose": "1.8 uL/cm\u00b2",
+      "duration": "4 h",
+      "removal_time": "30 minutes",
+      "application": "then rinsed off with warm water",
+      "test_type": "using human cadaver skin with receptor fluid sampled hourly",
+      "occlusion": "left uncovered and exposed to ambient air"
+     },
+     "duration_h": 4.0,
+     "removal_time_h": 0.5,
+     "dose_ml_cm2": 0.0018000000000000002
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded",
+     "pH": 6.7,
+     "dose_ml_cm2": 0.0018,
+     "temperature_c": null,
+     "duration_h": 4,
+     "removal_time_h": 0.5,
+     "permeant_name": "nicotinamide",
+     "formulation_name": "a glycerol-containing gel"
+    },
+    "missing": [
+     "temperature_c"
+    ],
+    "flagged": [
+     "temperature_c"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the temperature in \u00b0C\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 3,
+    "prompt": "Simulate skin absorption of ibuprofen from a silicone-based serum at pH 5.6, 37 C, dose 2 \u00b5L/cm\u00b2, applied as a wash-off product and removed after 5 minutes, in vivo, unoccluded.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "ibuprofen",
+     "formulation_name": "silicone-based serum",
+     "pH": 5.6,
+     "temperature_value": 37,
+     "temperature_unit": "C",
+     "dose_value": 2,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "removal_time_value": 5,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "ibuprofen",
+      "formulation_name": "silicone-based serum",
+      "pH": "pH 5.6",
+      "temperature": "37 C",
+      "dose": "2 \u00b5L/cm\u00b2",
+      "removal_time": "5 minutes",
+      "application": "applied as a wash-off product and removed after 5 minutes",
+      "test_type": "in vivo",
+      "occlusion": "unoccluded"
+     },
+     "temperature_c": 37.0,
+     "removal_time_h": 0.08333333333333333,
+     "dose_ml_cm2": 0.002
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "pH": 5.6,
+     "dose_ml_cm2": 0.002,
+     "temperature_c": 37,
+     "duration_h": null,
+     "removal_time_h": 0.08333333333333333,
+     "permeant_name": "ibuprofen",
+     "formulation_name": "a silicone-based serum"
+    },
+    "missing": [
+     "duration_h"
+    ],
+    "flagged": [
+     "duration_h"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the exposure duration in hours\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 4,
+    "prompt": "Simulate skin absorption of lactic acid from a surfactant-rich cleansing base at pH 4.3, 37 C, dose 0.0069 mL/cm\u00b2, for 120 minutes, applied as a wash-off product and removed after 30 minutes, in vitro.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "lactic acid",
+     "formulation_name": "surfactant-rich cleansing base",
+     "pH": 4.3,
+     "temperature_value": 37,
+     "temperature_unit": "C",
+     "dose_value": 0.0069,
+     "dose_unit": "mL/cm\u00b2",
+     "duration_value": 120,
+     "duration_unit": "minutes",
+     "removal_time_value": 30,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "evidence": {
+      "permeant_name": "lactic acid",
+      "formulation_name": "surfactant-rich cleansing base",
+      "pH": "pH 4.3",
+      "temperature": "37 C",
+      "dose": "0.0069 mL/cm\u00b2",
+      "duration": "120 minutes",
+      "removal_time": "30 minutes",
+      "application": "applied as a wash-off product and removed after 30 minutes",
+      "test_type": "in vitro"
+     },
+     "temperature_c": 37.0,
+     "duration_h": 2.0,
+     "removal_time_h": 0.5,
+     "dose_ml_cm2": 0.0069
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": null,
+     "pH": 4.3,
+     "dose_ml_cm2": 0.0069,
+     "temperature_c": 37,
+     "duration_h": 2.0,
+     "removal_time_h": 0.5,
+     "permeant_name": "lactic acid",
+     "formulation_name": "a surfactant-rich cleansing base"
+    },
+    "missing": [
+     "occlusion"
+    ],
+    "flagged": [
+     "occlusion"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the occlusion status (occluded or unoccluded)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 5,
+    "prompt": "Simulate skin absorption of nicotinamide from a glycerol-containing gel, 32 C, dose 1.8 uL/cm\u00b2, for 4 h, for 30 minutes, then rinsed off with warm water, using human cadaver skin with receptor fluid sampled hourly, left uncovered and exposed to ambient air.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "nicotinamide",
+     "formulation_name": "glycerol-containing gel",
+     "temperature_value": 32,
+     "temperature_unit": "C",
+     "dose_value": 1.8,
+     "dose_unit": "uL/cm\u00b2",
+     "duration_value": 4,
+     "duration_unit": "h",
+     "removal_time_value": 30,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "nicotinamide",
+      "formulation_name": "glycerol-containing gel",
+      "temperature": "32 C",
+      "dose": "1.8 uL/cm\u00b2",
+      "duration": "4 h",
+      "removal_time": "30 minutes",
+      "application": "then rinsed off with warm water",
+      "test_type": "using human cadaver skin with receptor fluid sampled hourly",
+      "occlusion": "left uncovered and exposed to ambient air"
+     },
+     "temperature_c": 32.0,
+     "duration_h": 4.0,
+     "removal_time_h": 0.5,
+     "dose_ml_cm2": 0.0018000000000000002
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded",
+     "pH": null,
+     "dose_ml_cm2": 0.0018,
+     "temperature_c": 32,
+     "duration_h": 4,
+     "removal_time_h": 0.5,
+     "permeant_name": "nicotinamide",
+     "formulation_name": "a glycerol-containing gel"
+    },
+    "missing": [
+     "pH"
+    ],
+    "flagged": [
+     "pH"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the formulation pH\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 6,
+    "prompt": "Simulate skin absorption of glycolic acid from a hydroalcoholic lotion at pH 5.4, 310 K, dose 0.0027 mL/cm\u00b2, as a shampoo base, rinsed after 15 minutes, on the backs of healthy adult subjects, non-occluded, with the surface open to the atmosphere.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "glycolic acid",
+     "formulation_name": "hydroalcoholic lotion",
+     "pH": 5.4,
+     "temperature_value": 310,
+     "temperature_unit": "K",
+     "dose_value": 0.0027,
+     "dose_unit": "mL/cm\u00b2",
+     "removal_time_value": 15,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "glycolic acid",
+      "formulation_name": "hydroalcoholic lotion",
+      "pH": "pH 5.4",
+      "temperature": "310 K",
+      "dose": "0.0027 mL/cm\u00b2",
+      "removal_time": "15 minutes",
+      "application": "as a shampoo base, rinsed after 15 minutes",
+      "test_type": "on the backs of healthy adult subjects",
+      "occlusion": "non-occluded, with the surface open to the atmosphere"
+     },
+     "temperature_c": 36.85000000000002,
+     "removal_time_h": 0.25,
+     "dose_ml_cm2": 0.0027
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "pH": 5.4,
+     "dose_ml_cm2": 0.0027,
+     "temperature_c": 36.85000000000002,
+     "duration_h": null,
+     "removal_time_h": 0.25,
+     "permeant_name": "glycolic acid",
+     "formulation_name": "a hydroalcoholic lotion"
+    },
+    "missing": [
+     "duration_h"
+    ],
+    "flagged": [
+     "duration_h"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the exposure duration in hours\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 7,
+    "prompt": "Simulate skin absorption of caffeine from a propylene-glycol solution at pH 4.9, 35 \u00b0C, dose 4.8 \u00b5L/cm\u00b2, for 4 h, as a moisturiser that is not removed, on split-thickness skin membranes in diffusion cells.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "caffeine",
+     "formulation_name": "propylene-glycol solution",
+     "pH": 4.9,
+     "temperature_value": 35,
+     "temperature_unit": "\u00b0C",
+     "dose_value": 4.8,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "duration_value": 4,
+     "duration_unit": "h",
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "evidence": {
+      "permeant_name": "caffeine",
+      "formulation_name": "propylene-glycol solution",
+      "pH": "pH 4.9",
+      "temperature": "35 \u00b0C",
+      "dose": "4.8 \u00b5L/cm\u00b2",
+      "duration": "4 h",
+      "application": "as a moisturiser that is not removed",
+      "test_type": "on split-thickness skin membranes in diffusion cells"
+     },
+     "temperature_c": 35.0,
+     "duration_h": 4.0,
+     "dose_ml_cm2": 0.0048
+    },
+    "reference": {
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "occlusion": null,
+     "pH": 4.9,
+     "dose_ml_cm2": 0.0048,
+     "temperature_c": 35,
+     "duration_h": 4,
+     "removal_time_h": null,
+     "permeant_name": "caffeine",
+     "formulation_name": "a propylene-glycol solution"
+    },
+    "missing": [
+     "occlusion"
+    ],
+    "flagged": [
+     "occlusion"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the SMILES string of the permeant\n  - the occlusion status (occluded or unoccluded)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 8,
+    "prompt": "Simulate skin absorption of glycolic acid from a hydroalcoholic lotion at pH 7.5, 37 \u00b0C, dose 23 \u00b5L applied over 5 cm\u00b2, for 12 h, on dermatomed porcine ear skin mounted in flow-through cells, under an occlusive film applied over the treated area.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "glycolic acid",
+     "formulation_name": "hydroalcoholic lotion",
+     "pH": 7.5,
+     "temperature_value": 37,
+     "temperature_unit": "\u00b0C",
+     "dose_value": 23,
+     "dose_unit": "\u00b5L",
+     "duration_value": 12,
+     "duration_unit": "h",
+     "area_value": 5,
+     "area_unit": "cm\u00b2",
+     "test_type": "in_vitro",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "glycolic acid",
+      "formulation_name": "hydroalcoholic lotion",
+      "pH": "pH 7.5",
+      "temperature": "37 \u00b0C",
+      "dose": "23 \u00b5L",
+      "duration": "12 h",
+      "area": "5 cm\u00b2",
+      "test_type": "on dermatomed porcine ear skin mounted in flow-through cells",
+      "occlusion": "under an occlusive film applied over the treated area"
+     },
+     "area_cm2": 5.0,
+     "temperature_c": 37.0,
+     "duration_h": 12.0,
+     "dose_ml_cm2": 0.0046
+    },
+    "reference": {
+     "application": null,
+     "test_type": "in_vitro",
+     "occlusion": "occluded",
+     "pH": 7.5,
+     "dose_ml_cm2": 0.0046,
+     "temperature_c": 37,
+     "duration_h": 12,
+     "removal_time_h": null,
+     "permeant_name": "glycolic acid",
+     "formulation_name": "a hydroalcoholic lotion"
+    },
+    "missing": [
+     "application"
+    ],
+    "flagged": [
+     "application"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the application mode (leave-on or wash-off)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 9,
+    "prompt": "Simulate skin absorption of nicotinamide from an aqueous gel, 37 C, dose 0.0135 mL/cm\u00b2, for 8 hours, applied as a leave-on product, in vitro, unoccluded.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "nicotinamide",
+     "formulation_name": "aqueous gel",
+     "temperature_value": 37,
+     "temperature_unit": "C",
+     "dose_value": 0.0135,
+     "dose_unit": "mL/cm\u00b2",
+     "duration_value": 8,
+     "duration_unit": "hours",
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "nicotinamide",
+      "formulation_name": "aqueous gel",
+      "temperature": "37 C",
+      "dose": "0.0135 mL/cm\u00b2",
+      "duration": "8 hours",
+      "application": "applied as a leave-on product",
+      "test_type": "in vitro",
+      "occlusion": "unoccluded"
+     },
+     "temperature_c": 37.0,
+     "duration_h": 8.0,
+     "dose_ml_cm2": 0.0135
+    },
+    "reference": {
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded",
+     "pH": null,
+     "dose_ml_cm2": 0.0135,
+     "temperature_c": 37,
+     "duration_h": 8,
+     "removal_time_h": null,
+     "permeant_name": "nicotinamide",
+     "formulation_name": "an aqueous gel"
+    },
+    "missing": [
+     "pH"
+    ],
+    "flagged": [
+     "pH"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the formulation pH\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 10,
+    "prompt": "Simulate skin absorption of lactic acid from a glycerol-containing gel, 305 K, dose 5.6 \u00b5L/cm\u00b2, for 2 days, applied as a leave-on product, in vitro, under occlusion.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "lactic acid",
+     "formulation_name": "glycerol-containing gel",
+     "temperature_value": 305,
+     "temperature_unit": "K",
+     "dose_value": 5.6,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "duration_value": 2,
+     "duration_unit": "days",
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "lactic acid",
+      "formulation_name": "glycerol-containing gel",
+      "temperature": "305 K",
+      "dose": "5.6 \u00b5L/cm\u00b2",
+      "duration": "2 days",
+      "application": "applied as a leave-on product",
+      "test_type": "in vitro",
+      "occlusion": "under occlusion"
+     },
+     "temperature_c": 31.850000000000023,
+     "duration_h": 48.0,
+     "dose_ml_cm2": 0.0056
+    },
+    "reference": {
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "occlusion": "occluded",
+     "pH": null,
+     "dose_ml_cm2": 0.0056,
+     "temperature_c": 31.850000000000023,
+     "duration_h": 48.0,
+     "removal_time_h": null,
+     "permeant_name": "lactic acid",
+     "formulation_name": "a glycerol-containing gel"
+    },
+    "missing": [
+     "pH"
+    ],
+    "flagged": [
+     "pH"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the formulation pH\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 11,
+    "prompt": "Simulate skin absorption of ibuprofen from a silicone-based serum at pH 5.6, dose 2 \u00b5L/cm\u00b2, for 8 hours, applied as a wash-off product and removed after 5 minutes, in vivo, unoccluded.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "ibuprofen",
+     "formulation_name": "silicone-based serum",
+     "pH": 5.6,
+     "dose_value": 2,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "duration_value": 8,
+     "duration_unit": "hours",
+     "removal_time_value": 5,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "ibuprofen",
+      "formulation_name": "silicone-based serum",
+      "pH": "pH 5.6",
+      "dose": "2 \u00b5L/cm\u00b2",
+      "duration": "8 hours",
+      "removal_time": "5 minutes",
+      "application": "applied as a wash-off product and removed after 5 minutes",
+      "test_type": "in vivo",
+      "occlusion": "unoccluded"
+     },
+     "duration_h": 8.0,
+     "removal_time_h": 0.08333333333333333,
+     "dose_ml_cm2": 0.002
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "pH": 5.6,
+     "dose_ml_cm2": 0.002,
+     "temperature_c": null,
+     "duration_h": 8,
+     "removal_time_h": 0.08333333333333333,
+     "permeant_name": "ibuprofen",
+     "formulation_name": "a silicone-based serum"
+    },
+    "missing": [
+     "temperature_c"
+    ],
+    "flagged": [
+     "temperature_c"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the temperature in \u00b0C\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 12,
+    "prompt": "Simulate skin absorption of caffeine from a silicone-based serum at pH 7.7, 308 K, dose 8.3 \u00b5L/cm\u00b2, and allowed to remain on the skin throughout, on the volar forearm of 12 healthy volunteers, with the donor compartment left open to the air.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "caffeine",
+     "formulation_name": "silicone-based serum",
+     "pH": 7.7,
+     "temperature_value": 308,
+     "temperature_unit": "K",
+     "dose_value": 8.3,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "application": "leave_on",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "caffeine",
+      "formulation_name": "silicone-based serum",
+      "pH": "pH 7.7",
+      "temperature": "308 K",
+      "dose": "8.3 \u00b5L/cm\u00b2",
+      "application": "allowed to remain on the skin throughout",
+      "test_type": "on the volar forearm of 12 healthy volunteers",
+      "occlusion": "with the donor compartment left open to the air"
+     },
+     "temperature_c": 34.85000000000002,
+     "dose_ml_cm2": 0.0083
+    },
+    "reference": {
+     "application": "leave_on",
+     "test_type": "in_vivo",
+     "occlusion": "unoccluded",
+     "pH": 7.7,
+     "dose_ml_cm2": 0.0083,
+     "temperature_c": 34.85000000000002,
+     "duration_h": null,
+     "removal_time_h": null,
+     "permeant_name": "caffeine",
+     "formulation_name": "a silicone-based serum"
+    },
+    "missing": [
+     "duration_h"
+    ],
+    "flagged": [
+     "duration_h"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the SMILES string of the permeant\n  - the exposure duration in hours\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 13,
+    "prompt": "Simulate skin absorption of naproxen from a propylene-glycol solution at pH 6.8, 35 C, dose 6.8 \u00b5L/cm\u00b2, for 1 days, applied as a leave-on product, in vivo.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "naproxen",
+     "formulation_name": "propylene-glycol solution",
+     "pH": 6.8,
+     "temperature_value": 35,
+     "temperature_unit": "C",
+     "dose_value": 6.8,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "duration_value": 1,
+     "duration_unit": "days",
+     "application": "leave_on",
+     "test_type": "in_vivo",
+     "evidence": {
+      "permeant_name": "naproxen",
+      "formulation_name": "propylene-glycol solution",
+      "pH": "pH 6.8",
+      "temperature": "35 C",
+      "dose": "6.8 \u00b5L/cm\u00b2",
+      "duration": "1 days",
+      "application": "applied as a leave-on product",
+      "test_type": "in vivo"
+     },
+     "temperature_c": 35.0,
+     "duration_h": 24.0,
+     "dose_ml_cm2": 0.0068
+    },
+    "reference": {
+     "application": "leave_on",
+     "test_type": "in_vivo",
+     "occlusion": null,
+     "pH": 6.8,
+     "dose_ml_cm2": 0.0068,
+     "temperature_c": 35,
+     "duration_h": 24.0,
+     "removal_time_h": null,
+     "permeant_name": "naproxen",
+     "formulation_name": "a propylene-glycol solution"
+    },
+    "missing": [
+     "occlusion"
+    ],
+    "flagged": [
+     "occlusion"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the occlusion status (occluded or unoccluded)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 14,
+    "prompt": "Simulate skin absorption of niacinamide from an oil-in-water emulsion at pH 7.6, 37 \u00b0C, dose 3.9 uL/cm\u00b2, for 8 hours, on the forearms of human volunteers under dermatological supervision, sealed under a Parafilm-covered patch.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "niacinamide",
+     "formulation_name": "oil-in-water emulsion",
+     "pH": 7.6,
+     "temperature_value": 37,
+     "temperature_unit": "\u00b0C",
+     "dose_value": 3.9,
+     "dose_unit": "uL/cm\u00b2",
+     "duration_value": 8,
+     "duration_unit": "hours",
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "niacinamide",
+      "formulation_name": "oil-in-water emulsion",
+      "pH": "pH 7.6",
+      "temperature": "37 \u00b0C",
+      "dose": "3.9 uL/cm\u00b2",
+      "duration": "8 hours",
+      "test_type": "on the forearms of human volunteers under dermatological supervision",
+      "occlusion": "sealed under a Parafilm-covered patch"
+     },
+     "temperature_c": 37.0,
+     "duration_h": 8.0,
+     "dose_ml_cm2": 0.0039
+    },
+    "reference": {
+     "application": null,
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "pH": 7.6,
+     "dose_ml_cm2": 0.0039,
+     "temperature_c": 37,
+     "duration_h": 8,
+     "removal_time_h": null,
+     "permeant_name": "niacinamide",
+     "formulation_name": "an oil-in-water emulsion"
+    },
+    "missing": [
+     "application"
+    ],
+    "flagged": [
+     "application"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the application mode (leave-on or wash-off)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 15,
+    "prompt": "Simulate skin absorption of benzophenone-3 from a glycerol-containing gel at pH 6.8, 35 C, dose 0.0028 mL/cm\u00b2, for 6 h, in vivo, under occlusion.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "benzophenone-3",
+     "formulation_name": "glycerol-containing gel",
+     "pH": 6.8,
+     "temperature_value": 35,
+     "temperature_unit": "C",
+     "dose_value": 0.0028,
+     "dose_unit": "mL/cm\u00b2",
+     "duration_value": 6,
+     "duration_unit": "h",
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "benzophenone-3",
+      "formulation_name": "glycerol-containing gel",
+      "pH": "pH 6.8",
+      "temperature": "35 C",
+      "dose": "0.0028 mL/cm\u00b2",
+      "duration": "6 h",
+      "test_type": "in vivo",
+      "occlusion": "under occlusion"
+     },
+     "temperature_c": 35.0,
+     "duration_h": 6.0,
+     "dose_ml_cm2": 0.0028
+    },
+    "reference": {
+     "application": null,
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "pH": 6.8,
+     "dose_ml_cm2": 0.0028,
+     "temperature_c": 35,
+     "duration_h": 6,
+     "removal_time_h": null,
+     "permeant_name": "benzophenone-3",
+     "formulation_name": "a glycerol-containing gel"
+    },
+    "missing": [
+     "application"
+    ],
+    "flagged": [
+     "application"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the application mode (leave-on or wash-off)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 16,
+    "prompt": "Simulate skin absorption of lactic acid from an aqueous gel at pH 5.2, 305 K, dose 3 \u00b5L/cm\u00b2, for 8 hours, applied as a wash-off product and removed after 30 minutes, in vitro.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "lactic acid",
+     "formulation_name": "aqueous gel",
+     "pH": 5.2,
+     "temperature_value": 305,
+     "temperature_unit": "K",
+     "dose_value": 3,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "duration_value": 8,
+     "duration_unit": "hours",
+     "removal_time_value": 30,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "evidence": {
+      "permeant_name": "lactic acid",
+      "formulation_name": "aqueous gel",
+      "pH": "pH 5.2",
+      "temperature": "305 K",
+      "dose": "3 \u00b5L/cm\u00b2",
+      "duration": "8 hours",
+      "removal_time": "30 minutes",
+      "application": "applied as a wash-off product and removed after 30 minutes",
+      "test_type": "in vitro"
+     },
+     "temperature_c": 31.850000000000023,
+     "duration_h": 8.0,
+     "removal_time_h": 0.5,
+     "dose_ml_cm2": 0.003
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": null,
+     "pH": 5.2,
+     "dose_ml_cm2": 0.003,
+     "temperature_c": 31.850000000000023,
+     "duration_h": 8,
+     "removal_time_h": 0.5,
+     "permeant_name": "lactic acid",
+     "formulation_name": "an aqueous gel"
+    },
+    "missing": [
+     "occlusion"
+    ],
+    "flagged": [
+     "occlusion"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the occlusion status (occluded or unoccluded)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 17,
+    "prompt": "Simulate skin absorption of glycolic acid from a surfactant-rich cleansing base at pH 5.5, 305 K, dose 16 \u00b5L applied over 2 cm\u00b2, for 6 h, in vitro, under occlusion.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "glycolic acid",
+     "formulation_name": "surfactant-rich cleansing base",
+     "pH": 5.5,
+     "temperature_value": 305,
+     "temperature_unit": "K",
+     "dose_value": 16,
+     "dose_unit": "\u00b5L",
+     "duration_value": 6,
+     "duration_unit": "h",
+     "area_value": 2,
+     "area_unit": "cm\u00b2",
+     "test_type": "in_vitro",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "glycolic acid",
+      "formulation_name": "surfactant-rich cleansing base",
+      "pH": "pH 5.5",
+      "temperature": "305 K",
+      "dose": "16 \u00b5L",
+      "duration": "6 h",
+      "area": "2 cm\u00b2",
+      "test_type": "in vitro",
+      "occlusion": "under occlusion"
+     },
+     "area_cm2": 2.0,
+     "temperature_c": 31.850000000000023,
+     "duration_h": 6.0,
+     "dose_ml_cm2": 0.008
+    },
+    "reference": {
+     "application": null,
+     "test_type": "in_vitro",
+     "occlusion": "occluded",
+     "pH": 5.5,
+     "dose_ml_cm2": 0.008,
+     "temperature_c": 31.850000000000023,
+     "duration_h": 6,
+     "removal_time_h": null,
+     "permeant_name": "glycolic acid",
+     "formulation_name": "a surfactant-rich cleansing base"
+    },
+    "missing": [
+     "application"
+    ],
+    "flagged": [
+     "application"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the application mode (leave-on or wash-off)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 18,
+    "prompt": "Simulate skin absorption of ibuprofen from a silicone-based serum at pH 5.6, 37 C, dose 2 \u00b5L/cm\u00b2, for 8 hours, applied as a wash-off product and removed after 5 minutes, unoccluded.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "ibuprofen",
+     "formulation_name": "silicone-based serum",
+     "pH": 5.6,
+     "temperature_value": 37,
+     "temperature_unit": "C",
+     "dose_value": 2,
+     "dose_unit": "\u00b5L/cm\u00b2",
+     "duration_value": 8,
+     "duration_unit": "hours",
+     "removal_time_value": 5,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "occlusion": "unoccluded",
+     "evidence": {
+      "permeant_name": "ibuprofen",
+      "formulation_name": "silicone-based serum",
+      "pH": "pH 5.6",
+      "temperature": "37 C",
+      "dose": "2 \u00b5L/cm\u00b2",
+      "duration": "8 hours",
+      "removal_time": "5 minutes",
+      "application": "applied as a wash-off product and removed after 5 minutes",
+      "occlusion": "unoccluded"
+     },
+     "temperature_c": 37.0,
+     "duration_h": 8.0,
+     "removal_time_h": 0.08333333333333333,
+     "dose_ml_cm2": 0.002
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": null,
+     "occlusion": "unoccluded",
+     "pH": 5.6,
+     "dose_ml_cm2": 0.002,
+     "temperature_c": 37,
+     "duration_h": 8,
+     "removal_time_h": 0.08333333333333333,
+     "permeant_name": "ibuprofen",
+     "formulation_name": "a silicone-based serum"
+    },
+    "missing": [
+     "test_type"
+    ],
+    "flagged": [
+     "test_type"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the test type (in vitro or in vivo)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 19,
+    "prompt": "Simulate skin absorption of glycolic acid from a hydroalcoholic lotion, 310 K, dose 1.8 uL/cm\u00b2, for 15 minutes, after which the site was washed with water, in healthy volunteers, with tape stripping at the end of the exposure, sealed under a Parafilm-covered patch.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "glycolic acid",
+     "formulation_name": "hydroalcoholic lotion",
+     "temperature_value": 310,
+     "temperature_unit": "K",
+     "dose_value": 1.8,
+     "dose_unit": "uL/cm\u00b2",
+     "removal_time_value": 15,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "glycolic acid",
+      "formulation_name": "hydroalcoholic lotion",
+      "temperature": "310 K",
+      "dose": "1.8 uL/cm\u00b2",
+      "removal_time": "15 minutes",
+      "application": "for 15 minutes, after which the site was washed with water",
+      "test_type": "in healthy volunteers, with tape stripping at the end of the exposure",
+      "occlusion": "sealed under a Parafilm-covered patch"
+     },
+     "temperature_c": 36.85000000000002,
+     "removal_time_h": 0.25,
+     "dose_ml_cm2": 0.0018000000000000002
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": "in_vivo",
+     "occlusion": "occluded",
+     "pH": null,
+     "dose_ml_cm2": 0.0018,
+     "temperature_c": 36.85000000000002,
+     "duration_h": null,
+     "removal_time_h": 0.25,
+     "permeant_name": "glycolic acid",
+     "formulation_name": "a hydroalcoholic lotion"
+    },
+    "missing": [
+     "duration_h",
+     "pH"
+    ],
+    "flagged": [
+     "duration_h",
+     "pH"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the formulation pH\n  - the exposure duration in hours\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   },
+   {
+    "set": "set_b",
+    "id": 20,
+    "prompt": "Simulate skin absorption of salicylic acid from a hydroalcoholic lotion at pH 7.9, 35 C, dose 0.0025 mL/cm\u00b2, applied as a wash-off product and removed after 30 minutes, under occlusion.",
+    "tool_call": {
+     "intent": "new_project",
+     "permeant_name": "salicylic acid",
+     "formulation_name": "hydroalcoholic lotion",
+     "pH": 7.9,
+     "temperature_value": 35,
+     "temperature_unit": "C",
+     "dose_value": 0.0025,
+     "dose_unit": "mL/cm\u00b2",
+     "removal_time_value": 30,
+     "removal_time_unit": "minutes",
+     "application": "wash_off",
+     "occlusion": "occluded",
+     "evidence": {
+      "permeant_name": "salicylic acid",
+      "formulation_name": "hydroalcoholic lotion",
+      "pH": "pH 7.9",
+      "temperature": "35 C",
+      "dose": "0.0025 mL/cm\u00b2",
+      "removal_time": "30 minutes",
+      "application": "applied as a wash-off product and removed after 30 minutes",
+      "occlusion": "under occlusion"
+     },
+     "temperature_c": 35.0,
+     "removal_time_h": 0.5,
+     "dose_ml_cm2": 0.0025
+    },
+    "reference": {
+     "application": "wash_off",
+     "test_type": null,
+     "occlusion": "occluded",
+     "pH": 7.9,
+     "dose_ml_cm2": 0.0025,
+     "temperature_c": 35,
+     "duration_h": null,
+     "removal_time_h": 0.5,
+     "permeant_name": "salicylic acid",
+     "formulation_name": "a hydroalcoholic lotion"
+    },
+    "missing": [
+     "test_type",
+     "duration_h"
+    ],
+    "flagged": [
+     "test_type",
+     "duration_h"
+    ],
+    "silent": [],
+    "stated_fields_ok": true,
+    "question": "Before I can run the simulation I still need:\n  - the SMILES string of the permeant\n  - the exposure duration in hours\n  - the test type (in vitro or in vivo)\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?"
+   }
+  ]
+ },
+ "set_c": {
+  "confusion": {
+   "finite->finite": 10,
+   "infinite->infinite": 10
+  }
+ },
+ "set_d": {
+  "determinate": [
+   251,
+   251
+  ],
+  "clarify": [
+   20,
+   20
+  ],
+  "fields": {
+   "pH": [
+    30,
+    30
+   ],
+   "dose_ml_cm2": [
+    27,
+    27
+   ],
+   "temperature_c": [
+    26,
+    26
+   ],
+   "duration_h": [
+    27,
+    27
+   ],
+   "permeant_name": [
+    29,
+    29
+   ],
+   "application": [
+    23,
+    23
+   ],
+   "test_type": [
+    30,
+    30
+   ],
+   "occlusion": [
+    28,
+    28
+   ],
+   "dose_regime": [
+    27,
+    27
+   ],
+   "clarify:dose_ml_cm2": [
+    3,
+    3
+   ],
+   "clarify:duration_h": [
+    3,
+    3
+   ],
+   "clarify:temperature_c": [
+    4,
+    4
+   ],
+   "clarify:occlusion": [
+    2,
+    2
+   ],
+   "clarify:application": [
+    7,
+    7
+   ],
+   "removal_time_h": [
+    4,
+    4
+   ],
+   "clarify:permeant": [
+    1,
+    1
+   ]
+  },
+  "failures": []
+ },
+ "set_e": {
+  "asked": [
+   4,
+   4
+  ],
+  "controls": [
+   1,
+   2
+  ],
+  "rows": [
+   {
+    "set": "set_e",
+    "id": 1,
+    "group": "must_ask",
+    "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 3.8, 32 \u00b0C, dose 3 \u00b5L/cm\u00b2, applied to the skin for 30 minutes, in vitro in Franz cells, under occlusion.",
+    "model_said": null,
+    "after_guardrail": null,
+    "guardrail_fired": true,
+    "sent_to_clarification": true,
+    "pass": true,
+    "reference": {
+     "permeant_name": "lactic acid",
+     "pH": 3.8,
+     "dose_ml_cm2": 0.003,
+     "temperature_c": 32.0,
+     "duration_h": null,
+     "removal_time_h": null,
+     "application": null,
+     "test_type": "in_vitro",
+     "occlusion": "occluded"
+    },
+    "warnings": [],
+    "question": "Before I can run the simulation I still need the application mode: the request gives a contact time but does not say whether the product stays on the skin or is removed - please state either leave-on, or wash-off together with the removal time. Could you provide it?",
+    "errors": []
+   },
+   {
+    "set": "set_e",
+    "id": 2,
+    "group": "must_ask",
+    "prompt": "Glycolic acid in an aqueous gel, pH 4.0, 32 \u00b0C, 5 \u00b5L/cm\u00b2. The product was in contact with the skin for 15 minutes and absorption was followed for a total of 6 h. In vitro, donor compartment open to the air.",
+    "model_said": "leave_on",
+    "after_guardrail": null,
+    "guardrail_fired": true,
+    "sent_to_clarification": true,
+    "pass": true,
+    "reference": {
+     "permeant_name": "glycolic acid",
+     "pH": 4.0,
+     "dose_ml_cm2": 0.005,
+     "temperature_c": 32.0,
+     "duration_h": 6.0,
+     "removal_time_h": null,
+     "application": null,
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded"
+    },
+    "warnings": [
+     "the request times the exposure but does not say whether the product is removed; the extracted application mode (leave_on) was withdrawn and is being confirmed instead"
+    ],
+    "question": "Before I can run the simulation I still need the application mode: the request gives a contact time but does not say whether the product stays on the skin or is removed - please state either leave-on, or wash-off together with the removal time (the phrase \"in contact with the skin for 15 minutes\" was read as describing this, but it is not an explicit statement about removal). Could you provide it?",
+    "errors": []
+   },
+   {
+    "set": "set_e",
+    "id": 3,
+    "group": "must_ask",
+    "prompt": "Caffeine from an aqueous gel at pH 6.0, 4 \u00b5L/cm\u00b2, 32 \u00b0C, applied for 10 minutes, with receptor fluid sampled over 24 h. In vitro, occluded.",
+    "model_said": "leave_on",
+    "after_guardrail": null,
+    "guardrail_fired": true,
+    "sent_to_clarification": true,
+    "pass": true,
+    "reference": {
+     "permeant_name": "caffeine",
+     "pH": 6.0,
+     "dose_ml_cm2": 0.004,
+     "temperature_c": 32.0,
+     "duration_h": 24.0,
+     "removal_time_h": null,
+     "application": null,
+     "test_type": "in_vitro",
+     "occlusion": "occluded"
+    },
+    "warnings": [
+     "the request times the exposure but does not say whether the product is removed; the extracted application mode (leave_on) was withdrawn and is being confirmed instead"
+    ],
+    "question": "Before I can run the simulation I still need the application mode: the request gives a contact time but does not say whether the product stays on the skin or is removed - please state either leave-on, or wash-off together with the removal time (the phrase \"applied for 10 minutes\" was read as describing this, but it is not an explicit statement about removal). Could you provide it?",
+    "errors": []
+   },
+   {
+    "set": "set_e",
+    "id": 4,
+    "group": "must_ask",
+    "prompt": "In vitro permeation test. Test item: salicylic acid, 2 \u00b5L/cm\u00b2 of a pH 5.0 lotion, dermatomed human skin, 32 \u00b0C, non-occluded, exposure period 8 h.",
+    "model_said": "leave_on",
+    "after_guardrail": null,
+    "guardrail_fired": true,
+    "sent_to_clarification": true,
+    "pass": true,
+    "reference": {
+     "permeant_name": "salicylic acid",
+     "pH": 5.0,
+     "dose_ml_cm2": 0.002,
+     "temperature_c": 32.0,
+     "duration_h": 8.0,
+     "removal_time_h": null,
+     "application": null,
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded"
+    },
+    "warnings": [
+     "the request times the exposure but does not say whether the product is removed; the extracted application mode (leave_on) was withdrawn and is being confirmed instead"
+    ],
+    "question": "Before I can run the simulation I still need the application mode: the request gives a contact time but does not say whether the product stays on the skin or is removed - please state either leave-on, or wash-off together with the removal time (the phrase \"exposure period 8 h\" was read as describing this, but it is not an explicit statement about removal). Could you provide it?",
+    "errors": []
+   },
+   {
+    "set": "set_e",
+    "id": 5,
+    "group": "must_not_ask",
+    "prompt": "Niacinamide cream, pH 5.5, 4 \u00b5L/cm\u00b2, 32 \u00b0C, 8 h, in vitro, occluded. The film was deliberately not disturbed at any point during the exposure and nothing was taken off the surface.",
+    "model_said": "leave_on",
+    "after_guardrail": null,
+    "guardrail_fired": true,
+    "sent_to_clarification": true,
+    "pass": false,
+    "reference": {
+     "permeant_name": "niacinamide",
+     "pH": 5.5,
+     "dose_ml_cm2": 0.004,
+     "temperature_c": 32.0,
+     "duration_h": 8.0,
+     "removal_time_h": null,
+     "application": "leave_on",
+     "test_type": "in_vitro",
+     "occlusion": "occluded"
+    },
+    "warnings": [
+     "the request times the exposure but does not say whether the product is removed; the extracted application mode (leave_on) was withdrawn and is being confirmed instead"
+    ],
+    "question": "Before I can run the simulation I still need the application mode: the request gives a contact time but does not say whether the product stays on the skin or is removed - please state either leave-on, or wash-off together with the removal time (the phrase \"deliberately not disturbed at any point during the exposure and nothing was taken off the surface\" was read as describing this, but it is not an explicit statement about removal). Could you provide it?",
+    "errors": [
+     "removal IS stated, but the rule stopped it (application None, asked=['active_fraction', 'application', 'cosolvent_fraction', 'insoluble_fraction', 'oil_fraction', 'surfactant_fraction', 'water_fraction'])"
+    ]
+   },
+   {
+    "set": "set_e",
+    "id": 6,
+    "group": "must_not_ask",
+    "prompt": "Ensulizole in a cleansing base, pH 7.0, 6 \u00b5L/cm\u00b2, 32 \u00b0C, in vitro, unoccluded. The product was rinsed from the skin after 120 seconds and absorption was followed for 4 h.",
+    "model_said": "wash_off",
+    "after_guardrail": "wash_off",
+    "guardrail_fired": false,
+    "sent_to_clarification": false,
+    "pass": true,
+    "reference": {
+     "permeant_name": "ensulizole",
+     "pH": 7.0,
+     "dose_ml_cm2": 0.006,
+     "temperature_c": 32.0,
+     "duration_h": 4.0,
+     "removal_time_h": 0.03333333333333333,
+     "application": "wash_off",
+     "test_type": "in_vitro",
+     "occlusion": "unoccluded"
+    },
+    "warnings": [],
+    "question": "Before I can run the simulation I still need:\n  - the cosolvent fraction of the formulation\n  - the water fraction of the formulation\n  - the oil fraction of the formulation\n  - the surfactant fraction of the formulation\n  - the insoluble fraction of the formulation\n  - the active fraction of the formulation\nCould you provide these?",
+    "errors": []
+   }
+  ]
+ }
+}

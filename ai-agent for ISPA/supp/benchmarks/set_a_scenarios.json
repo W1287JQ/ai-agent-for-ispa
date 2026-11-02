@@ -1,0 +1,1362 @@
+[
+ {
+  "id": 1,
+  "prompt": "Simulate skin absorption of nicotinamide from an oil-in-water emulsion at pH 7.3, 37 °C, dose 6 µL/cm², for 12 hours, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 7.3,
+   "dose_ml_cm2": 0.006,
+   "temperature_c": 37,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 2,
+  "prompt": "Simulate skin absorption of ibuprofen from a silicone-based serum at pH 5.7, 32 C, dose 0.0163 mL/cm², for 90 minutes, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 5.7,
+   "dose_ml_cm2": 0.0163,
+   "temperature_c": 32,
+   "duration_h": 1.5,
+   "removal_time_h": null,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 3,
+  "prompt": "Simulate skin absorption of naproxen from a light moisturising cream at pH 5.2, 35 °C, dose 7.1 uL/cm², for 24 h, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 5.2,
+   "dose_ml_cm2": 0.0070999999999999995,
+   "temperature_c": 35,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "permeant_name": "naproxen",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 4,
+  "prompt": "Simulate skin absorption of ensulizole from an aqueous gel at pH 6.1, 32 C, dose 7.1 µL/cm², for 6 h, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 6.1,
+   "dose_ml_cm2": 0.0070999999999999995,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 5,
+  "prompt": "Simulate skin absorption of caffeine from an oil-in-water emulsion at pH 3.4, 37 °C, dose 14.2 µL applied over 1 cm², for 6 h, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 3.4,
+   "dose_ml_cm2": 0.0142,
+   "temperature_c": 37,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "permeant_name": "caffeine",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 6,
+  "prompt": "Simulate skin absorption of glycolic acid from an aqueous gel at pH 7.6, 35 C, dose 3.4 µL/cm², for 6 hours, and allowed to remain on the skin throughout, in an IVPT with the receptor compartment stirred continuously, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 7.6,
+   "dose_ml_cm2": 0.0034,
+   "temperature_c": 35,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "permeant_name": "glycolic acid",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 7,
+  "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 4.1, 37 °C, dose 6.1 µL/cm², for 1 days, with no rinsing step at any point, in an IVPT with the receptor compartment stirred continuously, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 4.1,
+   "dose_ml_cm2": 0.0060999999999999995,
+   "temperature_c": 37,
+   "duration_h": 24.0,
+   "removal_time_h": null,
+   "permeant_name": "lactic acid",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 8,
+  "prompt": "Simulate skin absorption of ibuprofen from an aqueous gel at pH 6.1, 37 C, dose 2.3 µL applied over 1 cm², for 8 hours, and left on the skin for the whole exposure, in static Franz diffusion cells with excised human skin, covered with an impermeable dressing for the duration.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 6.1,
+   "dose_ml_cm2": 0.0023,
+   "temperature_c": 37,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 9,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a surfactant-rich cleansing base at pH 4.6, 305 K, dose 6.8 µL/cm², for 60 minutes, as a leave-on serum that stays in place, using human cadaver skin with receptor fluid sampled hourly, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 4.6,
+   "dose_ml_cm2": 0.0068,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 1.0,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 10,
+  "prompt": "Simulate skin absorption of glycolic acid from an oil-in-water emulsion at pH 6.4, 305 K, dose 2 uL/cm², for 6 h, and left on the skin for the whole exposure, on dermatomed porcine ear skin mounted in flow-through cells, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 6.4,
+   "dose_ml_cm2": 0.002,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "permeant_name": "glycolic acid",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 11,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a propylene-glycol solution at pH 6.4, 308 K, dose 8.6 uL/cm², for 12 h, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 6.4,
+   "dose_ml_cm2": 0.0086,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a propylene-glycol solution",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 12,
+  "prompt": "Simulate skin absorption of salicylic acid from a silicone-based serum at pH 3.7, 35 °C, dose 33.75 µL applied over 2.5 cm², for 24 h, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 3.7,
+   "dose_ml_cm2": 0.0135,
+   "temperature_c": 35,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "permeant_name": "salicylic acid",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 13,
+  "prompt": "Simulate skin absorption of benzophenone-3 from an aqueous gel at pH 3.6, 37 C, dose 6.4 µL/cm², for 12 hours, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 3.6,
+   "dose_ml_cm2": 0.0064,
+   "temperature_c": 37,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 14,
+  "prompt": "Simulate skin absorption of naproxen from a light moisturising cream at pH 7.4, 37 C, dose 0.0044 mL/cm², for 12 h, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 7.4,
+   "dose_ml_cm2": 0.0044,
+   "temperature_c": 37,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "naproxen",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 15,
+  "prompt": "Simulate skin absorption of naproxen from an aqueous gel at pH 4.8, 32 °C, dose 6.5 uL/cm², for 8 hours, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 4.8,
+   "dose_ml_cm2": 0.0065,
+   "temperature_c": 32,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "permeant_name": "naproxen",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 16,
+  "prompt": "Simulate skin absorption of glycolic acid from a glycerol-containing gel at pH 6.7, 37 C, dose 3.3 uL/cm², for 12 h, and left on the skin for the whole exposure, using human cadaver skin with receptor fluid sampled hourly, with the donor compartment left open to the air.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 6.7,
+   "dose_ml_cm2": 0.0033,
+   "temperature_c": 37,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "glycolic acid",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 17,
+  "prompt": "Simulate skin absorption of glycolic acid from a hydroalcoholic lotion at pH 5.7, 35 °C, dose 3.9 uL/cm², for 1 days, and allowed to remain on the skin throughout, in static Franz diffusion cells with excised human skin, without occlusion, so that volatiles can evaporate.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 5.7,
+   "dose_ml_cm2": 0.0039,
+   "temperature_c": 35,
+   "duration_h": 24.0,
+   "removal_time_h": null,
+   "permeant_name": "glycolic acid",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 18,
+  "prompt": "Simulate skin absorption of ensulizole from a hydroalcoholic lotion at pH 3.9, 35 C, dose 43 µL applied over 5 cm², for 90 minutes, with no rinsing step at any point, using human cadaver skin with receptor fluid sampled hourly, with the application site uncovered throughout.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 3.9,
+   "dose_ml_cm2": 0.0086,
+   "temperature_c": 35,
+   "duration_h": 1.5,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 19,
+  "prompt": "Simulate skin absorption of naproxen from a hydroalcoholic lotion at pH 4.6, 35 C, dose 0.02 mL/cm², for 30 minutes, as a leave-on serum that stays in place, on split-thickness skin membranes in diffusion cells, non-occluded, with the surface open to the atmosphere.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 4.6,
+   "dose_ml_cm2": 0.02,
+   "temperature_c": 35,
+   "duration_h": 0.5,
+   "removal_time_h": null,
+   "permeant_name": "naproxen",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 20,
+  "prompt": "Simulate skin absorption of niacinamide from an oil-in-water emulsion at pH 4.1, 32 C, dose 0.0175 mL/cm², for 6 h, as a moisturiser that is not removed, using human cadaver skin with receptor fluid sampled hourly, without occlusion, so that volatiles can evaporate.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 4.1,
+   "dose_ml_cm2": 0.0175,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "permeant_name": "niacinamide",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 21,
+  "prompt": "Simulate skin absorption of ensulizole from a surfactant-rich cleansing base at pH 5.8, 35 °C, dose 7.2 uL/cm², for 4 hours, applied as a leave-on product, in vivo, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 5.8,
+   "dose_ml_cm2": 0.0072,
+   "temperature_c": 35,
+   "duration_h": 4,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 22,
+  "prompt": "Simulate skin absorption of ensulizole from an oil-in-water emulsion at pH 3.4, 308 K, dose 5.8 µL/cm², for 90 minutes, applied as a leave-on product, in vivo, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 3.4,
+   "dose_ml_cm2": 0.0058,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 1.5,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 23,
+  "prompt": "Simulate skin absorption of niacinamide from a silicone-based serum at pH 3.9, 37 C, dose 0.0193 mL/cm², for 8 h, applied as a leave-on product, in vivo, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 3.9,
+   "dose_ml_cm2": 0.0193,
+   "temperature_c": 37,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "permeant_name": "niacinamide",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 24,
+  "prompt": "Simulate skin absorption of ibuprofen from a silicone-based serum at pH 6.9, 308 K, dose 0.0186 mL/cm², for 4 h, applied as a leave-on product, in vivo, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 6.9,
+   "dose_ml_cm2": 0.0186,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 4,
+   "removal_time_h": null,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 25,
+  "prompt": "Simulate skin absorption of ensulizole from an oil-in-water emulsion at pH 5.6, 35 °C, dose 0.0081 mL/cm², for 60 minutes, applied as a leave-on product, in vivo, under occlusion.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 5.6,
+   "dose_ml_cm2": 0.0081,
+   "temperature_c": 35,
+   "duration_h": 1.0,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 26,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a surfactant-rich cleansing base at pH 7.2, 32 °C, dose 4.2 µL applied over 1 cm², for 2 days, as a leave-on serum that stays in place, in healthy volunteers, with tape stripping at the end of the exposure, covered with an impermeable dressing for the duration.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 7.2,
+   "dose_ml_cm2": 0.004200000000000001,
+   "temperature_c": 32,
+   "duration_h": 48.0,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 27,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a silicone-based serum at pH 6.6, 32 C, dose 4.2 µL/cm², for 6 h, and allowed to remain on the skin throughout, on the backs of healthy adult subjects, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 6.6,
+   "dose_ml_cm2": 0.004200000000000001,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 28,
+  "prompt": "Simulate skin absorption of caffeine from an oil-in-water emulsion at pH 7.6, 305 K, dose 8.3 µL/cm², for 8 hours, with no rinsing step at any point, on the backs of healthy adult subjects, sealed under a Parafilm-covered patch.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 7.6,
+   "dose_ml_cm2": 0.0083,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "permeant_name": "caffeine",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 29,
+  "prompt": "Simulate skin absorption of niacinamide from a surfactant-rich cleansing base at pH 7.5, 32 C, dose 3.7 uL/cm², for 12 h, with no rinsing step at any point, on the volar forearm of 12 healthy volunteers, with the donor compartment capped and sealed.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 7.5,
+   "dose_ml_cm2": 0.0037,
+   "temperature_c": 32,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "niacinamide",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 30,
+  "prompt": "Simulate skin absorption of ensulizole from a surfactant-rich cleansing base at pH 4.4, 37 C, dose 0.0176 mL/cm², for 8 h, as a moisturiser that is not removed, in healthy volunteers, with tape stripping at the end of the exposure, sealed under a Parafilm-covered patch.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 4.4,
+   "dose_ml_cm2": 0.0176,
+   "temperature_c": 37,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 31,
+  "prompt": "Simulate skin absorption of benzophenone-3 from an oil-in-water emulsion at pH 3.6, 35 C, dose 34.5 µL applied over 5 cm², for 120 minutes, applied as a leave-on product, in vivo, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 3.6,
+   "dose_ml_cm2": 0.006900000000000001,
+   "temperature_c": 35,
+   "duration_h": 2.0,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 32,
+  "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 6.6, 32 C, dose 0.0132 mL/cm², for 1 days, applied as a leave-on product, in vivo, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.6,
+   "dose_ml_cm2": 0.0132,
+   "temperature_c": 32,
+   "duration_h": 24.0,
+   "removal_time_h": null,
+   "permeant_name": "lactic acid",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 33,
+  "prompt": "Simulate skin absorption of nicotinamide from an oil-in-water emulsion at pH 4.1, 310 K, dose 7.1 µL/cm², for 60 minutes, applied as a leave-on product, in vivo, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 4.1,
+   "dose_ml_cm2": 0.0070999999999999995,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 1.0,
+   "removal_time_h": null,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 34,
+  "prompt": "Simulate skin absorption of salicylic acid from a hydroalcoholic lotion at pH 3.3, 32 C, dose 0.0017 mL/cm², for 12 hours, applied as a leave-on product, in vivo, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 3.3,
+   "dose_ml_cm2": 0.0017,
+   "temperature_c": 32,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "salicylic acid",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 35,
+  "prompt": "Simulate skin absorption of ensulizole from a hydroalcoholic lotion at pH 6.3, 308 K, dose 0.0166 mL/cm², for 8 h, applied as a leave-on product, in vivo, unoccluded.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.3,
+   "dose_ml_cm2": 0.0166,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 36,
+  "prompt": "Simulate skin absorption of benzophenone-3 from an aqueous gel at pH 6.3, 32 C, dose 4.5 µL/cm², for 60 minutes, and allowed to remain on the skin throughout, in a clinical study with 20 participants, without occlusion, so that volatiles can evaporate.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.3,
+   "dose_ml_cm2": 0.0045,
+   "temperature_c": 32,
+   "duration_h": 1.0,
+   "removal_time_h": null,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 37,
+  "prompt": "Simulate skin absorption of salicylic acid from a hydroalcoholic lotion at pH 3.8, 310 K, dose 3.2 µL/cm², for 4 hours, and allowed to remain on the skin throughout, in healthy volunteers, with tape stripping at the end of the exposure, with the donor compartment left open to the air.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 3.8,
+   "dose_ml_cm2": 0.0032,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 4,
+   "removal_time_h": null,
+   "permeant_name": "salicylic acid",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 38,
+  "prompt": "Simulate skin absorption of niacinamide from a hydroalcoholic lotion at pH 6.7, 37 °C, dose 0.0064 mL/cm², for 2 days, as a leave-on serum that stays in place, on the backs of healthy adult subjects, left uncovered and exposed to ambient air.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.7,
+   "dose_ml_cm2": 0.0064,
+   "temperature_c": 37,
+   "duration_h": 48.0,
+   "removal_time_h": null,
+   "permeant_name": "niacinamide",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 39,
+  "prompt": "Simulate skin absorption of glycolic acid from a glycerol-containing gel at pH 3.2, 37 C, dose 0.0076 mL/cm², for 12 hours, and left on the skin for the whole exposure, in a clinical study with 20 participants, left uncovered and exposed to ambient air.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 3.2,
+   "dose_ml_cm2": 0.0076,
+   "temperature_c": 37,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "permeant_name": "glycolic acid",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 40,
+  "prompt": "Simulate skin absorption of ibuprofen from a hydroalcoholic lotion at pH 3.2, 35 °C, dose 0.0066 mL/cm², for 1 days, as a moisturiser that is not removed, on the forearms of human volunteers under dermatological supervision, with the application site uncovered throughout.",
+  "reference": {
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 3.2,
+   "dose_ml_cm2": 0.0066,
+   "temperature_c": 35,
+   "duration_h": 24.0,
+   "removal_time_h": null,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 41,
+  "prompt": "Simulate skin absorption of ensulizole from a silicone-based serum at pH 7.1, 37 °C, dose 98 µL applied over 5 cm², for 24 hours, applied as a wash-off product and removed after 60 minutes, in vitro, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 7.1,
+   "dose_ml_cm2": 0.0196,
+   "temperature_c": 37,
+   "duration_h": 24,
+   "removal_time_h": 1.0,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 42,
+  "prompt": "Simulate skin absorption of ibuprofen from a surfactant-rich cleansing base at pH 6.2, 37 C, dose 6.1 µL/cm², for 120 minutes, applied as a wash-off product and removed after 15 minutes, in vitro, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 6.2,
+   "dose_ml_cm2": 0.0060999999999999995,
+   "temperature_c": 37,
+   "duration_h": 2.0,
+   "removal_time_h": 0.25,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 43,
+  "prompt": "Simulate skin absorption of lactic acid from a hydroalcoholic lotion at pH 6.4, 37 °C, dose 3.5 µL/cm², for 12 h, applied as a wash-off product and removed after 30 minutes, in vitro, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 6.4,
+   "dose_ml_cm2": 0.0035,
+   "temperature_c": 37,
+   "duration_h": 12,
+   "removal_time_h": 0.5,
+   "permeant_name": "lactic acid",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 44,
+  "prompt": "Simulate skin absorption of nicotinamide from a light moisturising cream at pH 6.6, 35 °C, dose 29.5 µL applied over 5 cm², for 2 days, applied as a wash-off product and removed after 5 minutes, in vitro, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 6.6,
+   "dose_ml_cm2": 0.005900000000000001,
+   "temperature_c": 35,
+   "duration_h": 48.0,
+   "removal_time_h": 0.08333333333333333,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 45,
+  "prompt": "Simulate skin absorption of ensulizole from a light moisturising cream at pH 4.2, 310 K, dose 27.5 µL applied over 5 cm², for 24 hours, applied as a wash-off product and removed after 60 minutes, in vitro, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 4.2,
+   "dose_ml_cm2": 0.0055,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 24,
+   "removal_time_h": 1.0,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 46,
+  "prompt": "Simulate skin absorption of naproxen from an aqueous gel at pH 3.7, 37 °C, dose 7.7 µL/cm², for 24 hours, for 5 minutes before being wiped off with a damp cloth, on dermatomed porcine ear skin mounted in flow-through cells, with the donor compartment capped and sealed.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 3.7,
+   "dose_ml_cm2": 0.0077,
+   "temperature_c": 37,
+   "duration_h": 24,
+   "removal_time_h": 0.08333333333333333,
+   "permeant_name": "naproxen",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 47,
+  "prompt": "Simulate skin absorption of ensulizole from an oil-in-water emulsion at pH 7.5, 35 C, dose 8.2 µL/cm², for 8 hours, for 15 minutes and then washed off with a mild cleanser, in static Franz diffusion cells with excised human skin, under an occlusive film applied over the treated area.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 7.5,
+   "dose_ml_cm2": 0.008199999999999999,
+   "temperature_c": 35,
+   "duration_h": 8,
+   "removal_time_h": 0.25,
+   "permeant_name": "ensulizole",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 48,
+  "prompt": "Simulate skin absorption of niacinamide from a surfactant-rich cleansing base at pH 3.5, 37 °C, dose 0.0013 mL/cm², for 2 days, as a shampoo base, rinsed after 15 minutes, on split-thickness skin membranes in diffusion cells, sealed under a Parafilm-covered patch.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 3.5,
+   "dose_ml_cm2": 0.0013,
+   "temperature_c": 37,
+   "duration_h": 48.0,
+   "removal_time_h": 0.25,
+   "permeant_name": "niacinamide",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 49,
+  "prompt": "Simulate skin absorption of naproxen from a propylene-glycol solution at pH 4.7, 35 °C, dose 3.9 µL/cm², for 8 h, as a shampoo base, rinsed after 60 minutes, on dermatomed porcine ear skin mounted in flow-through cells, with the donor compartment capped and sealed.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 4.7,
+   "dose_ml_cm2": 0.0039,
+   "temperature_c": 35,
+   "duration_h": 8,
+   "removal_time_h": 1.0,
+   "permeant_name": "naproxen",
+   "formulation_name": "a propylene-glycol solution",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 50,
+  "prompt": "Simulate skin absorption of caffeine from a surfactant-rich cleansing base at pH 4.3, 37 °C, dose 0.0103 mL/cm², for 8 h, for 10 minutes before being wiped off with a damp cloth, on split-thickness skin membranes in diffusion cells, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "pH": 4.3,
+   "dose_ml_cm2": 0.0103,
+   "temperature_c": 37,
+   "duration_h": 8,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "caffeine",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 51,
+  "prompt": "Simulate skin absorption of nicotinamide from an aqueous gel at pH 3.9, 308 K, dose 4.6 uL/cm², for 120 minutes, applied as a wash-off product and removed after 30 minutes, in vitro, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 3.9,
+   "dose_ml_cm2": 0.0046,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 2.0,
+   "removal_time_h": 0.5,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 52,
+  "prompt": "Simulate skin absorption of salicylic acid from a surfactant-rich cleansing base at pH 6.5, 35 °C, dose 4.3 µL/cm², for 1 days, applied as a wash-off product and removed after 60 minutes, in vitro, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 6.5,
+   "dose_ml_cm2": 0.0043,
+   "temperature_c": 35,
+   "duration_h": 24.0,
+   "removal_time_h": 1.0,
+   "permeant_name": "salicylic acid",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 53,
+  "prompt": "Simulate skin absorption of salicylic acid from a surfactant-rich cleansing base at pH 3.7, 310 K, dose 0.0198 mL/cm², for 90 minutes, applied as a wash-off product and removed after 10 minutes, in vitro, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 3.7,
+   "dose_ml_cm2": 0.0198,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 1.5,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "salicylic acid",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 54,
+  "prompt": "Simulate skin absorption of ensulizole from an oil-in-water emulsion at pH 5.8, 305 K, dose 5.4 uL/cm², for 1 days, applied as a wash-off product and removed after 15 minutes, in vitro, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 5.8,
+   "dose_ml_cm2": 0.0054,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 24.0,
+   "removal_time_h": 0.25,
+   "permeant_name": "ensulizole",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 55,
+  "prompt": "Simulate skin absorption of salicylic acid from an oil-in-water emulsion at pH 3.2, 305 K, dose 7.6 uL/cm², for 120 minutes, applied as a wash-off product and removed after 60 minutes, in vitro, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 3.2,
+   "dose_ml_cm2": 0.0076,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 2.0,
+   "removal_time_h": 1.0,
+   "permeant_name": "salicylic acid",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 56,
+  "prompt": "Simulate skin absorption of ibuprofen from a surfactant-rich cleansing base at pH 6.4, 35 C, dose 2.6 µL/cm², for 1 days, for 30 minutes before being wiped off with a damp cloth, in an IVPT with the receptor compartment stirred continuously, without occlusion, so that volatiles can evaporate.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 6.4,
+   "dose_ml_cm2": 0.0026,
+   "temperature_c": 35,
+   "duration_h": 24.0,
+   "removal_time_h": 0.5,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 57,
+  "prompt": "Simulate skin absorption of nicotinamide from a hydroalcoholic lotion at pH 6.7, 37 °C, dose 2.6 µL/cm², for 2 days, for 15 minutes, then rinsed off with warm water, using human cadaver skin with receptor fluid sampled hourly, with the donor compartment left open to the air.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 6.7,
+   "dose_ml_cm2": 0.0026,
+   "temperature_c": 37,
+   "duration_h": 48.0,
+   "removal_time_h": 0.25,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 58,
+  "prompt": "Simulate skin absorption of caffeine from a glycerol-containing gel at pH 7.7, 32 °C, dose 0.012 mL/cm², for 1 days, as a shampoo base, rinsed after 10 minutes, on split-thickness skin membranes in diffusion cells, with the donor compartment left open to the air.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 7.7,
+   "dose_ml_cm2": 0.012,
+   "temperature_c": 32,
+   "duration_h": 24.0,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "caffeine",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 59,
+  "prompt": "Simulate skin absorption of ensulizole from a silicone-based serum at pH 4.4, 310 K, dose 8.5 µL/cm², for 30 minutes, for 60 minutes before being wiped off with a damp cloth, on split-thickness skin membranes in diffusion cells, non-occluded, with the surface open to the atmosphere.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 4.4,
+   "dose_ml_cm2": 0.0085,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 0.5,
+   "removal_time_h": 1.0,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 60,
+  "prompt": "Simulate skin absorption of nicotinamide from a silicone-based serum at pH 4, 32 C, dose 11.5 µL applied over 1 cm², for 6 hours, as a shampoo base, rinsed after 15 minutes, using human cadaver skin with receptor fluid sampled hourly, without occlusion, so that volatiles can evaporate.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "pH": 4.0,
+   "dose_ml_cm2": 0.0115,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": 0.25,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 61,
+  "prompt": "Simulate skin absorption of lactic acid from a silicone-based serum at pH 4.3, 32 °C, dose 4 uL/cm², for 2 days, applied as a wash-off product and removed after 30 minutes, in vivo, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 4.3,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 32,
+   "duration_h": 48.0,
+   "removal_time_h": 0.5,
+   "permeant_name": "lactic acid",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 62,
+  "prompt": "Simulate skin absorption of nicotinamide from a surfactant-rich cleansing base at pH 5.9, 308 K, dose 7.7 uL/cm², for 120 minutes, applied as a wash-off product and removed after 60 minutes, in vivo, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 5.9,
+   "dose_ml_cm2": 0.0077,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 2.0,
+   "removal_time_h": 1.0,
+   "permeant_name": "nicotinamide",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 63,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a hydroalcoholic lotion at pH 7.1, 32 °C, dose 0.0108 mL/cm², for 1 days, applied as a wash-off product and removed after 5 minutes, in vivo, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 7.1,
+   "dose_ml_cm2": 0.0108,
+   "temperature_c": 32,
+   "duration_h": 24.0,
+   "removal_time_h": 0.08333333333333333,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 64,
+  "prompt": "Simulate skin absorption of ibuprofen from a glycerol-containing gel at pH 4.6, 35 C, dose 0.0087 mL/cm², for 90 minutes, applied as a wash-off product and removed after 30 minutes, in vivo, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 4.6,
+   "dose_ml_cm2": 0.0087,
+   "temperature_c": 35,
+   "duration_h": 1.5,
+   "removal_time_h": 0.5,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 65,
+  "prompt": "Simulate skin absorption of naproxen from a glycerol-containing gel at pH 6.5, 310 K, dose 9 µL/cm², for 1 days, applied as a wash-off product and removed after 10 minutes, in vivo, under occlusion.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 6.5,
+   "dose_ml_cm2": 0.009,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 24.0,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "naproxen",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 66,
+  "prompt": "Simulate skin absorption of ibuprofen from a light moisturising cream at pH 5.7, 35 °C, dose 4.5 µL/cm², for 90 minutes, for 5 minutes, after which the site was washed with water, on the forearms of human volunteers under dermatological supervision, under an occlusive film applied over the treated area.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 5.7,
+   "dose_ml_cm2": 0.0045,
+   "temperature_c": 35,
+   "duration_h": 1.5,
+   "removal_time_h": 0.08333333333333333,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 67,
+  "prompt": "Simulate skin absorption of caffeine from a silicone-based serum at pH 6.4, 35 °C, dose 2.3 uL/cm², for 120 minutes, for 60 minutes before being wiped off with a damp cloth, on the volar forearm of 12 healthy volunteers, under an occlusive film applied over the treated area.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 6.4,
+   "dose_ml_cm2": 0.0023,
+   "temperature_c": 35,
+   "duration_h": 2.0,
+   "removal_time_h": 1.0,
+   "permeant_name": "caffeine",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 68,
+  "prompt": "Simulate skin absorption of naproxen from a surfactant-rich cleansing base at pH 7.7, 308 K, dose 7.9 µL/cm², for 60 minutes, for 15 minutes, then rinsed off with warm water, in a clinical study with 20 participants, covered with an occlusive Hill Top chamber.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 7.7,
+   "dose_ml_cm2": 0.0079,
+   "temperature_c": 34.85000000000002,
+   "duration_h": 1.0,
+   "removal_time_h": 0.25,
+   "permeant_name": "naproxen",
+   "formulation_name": "a surfactant-rich cleansing base",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 69,
+  "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 3.2, 37 C, dose 0.0036 mL/cm², for 2 days, as a shampoo base, rinsed after 5 minutes, on the backs of healthy adult subjects, with the donor compartment capped and sealed.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 3.2,
+   "dose_ml_cm2": 0.0036,
+   "temperature_c": 37,
+   "duration_h": 48.0,
+   "removal_time_h": 0.08333333333333333,
+   "permeant_name": "lactic acid",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 70,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a light moisturising cream at pH 5, 32 °C, dose 2.7 uL/cm², for 12 hours, as a shampoo base, rinsed after 15 minutes, on the volar forearm of 12 healthy volunteers, with the donor compartment capped and sealed.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "pH": 5.0,
+   "dose_ml_cm2": 0.0027,
+   "temperature_c": 32,
+   "duration_h": 12,
+   "removal_time_h": 0.25,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 71,
+  "prompt": "Simulate skin absorption of ibuprofen from a silicone-based serum at pH 6.8, 305 K, dose 2.4 µL/cm², for 30 minutes, applied as a wash-off product and removed after 15 minutes, in vivo, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.8,
+   "dose_ml_cm2": 0.0024,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 0.5,
+   "removal_time_h": 0.25,
+   "permeant_name": "ibuprofen",
+   "formulation_name": "a silicone-based serum",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 72,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a propylene-glycol solution at pH 6.1, 32 °C, dose 0.0165 mL/cm², for 6 hours, applied as a wash-off product and removed after 15 minutes, in vivo, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.1,
+   "dose_ml_cm2": 0.0165,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": 0.25,
+   "permeant_name": "benzophenone-3",
+   "formulation_name": "a propylene-glycol solution",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 73,
+  "prompt": "Simulate skin absorption of glycolic acid from an oil-in-water emulsion at pH 6.9, 305 K, dose 0.0085 mL/cm², for 12 h, applied as a wash-off product and removed after 10 minutes, in vivo, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 6.9,
+   "dose_ml_cm2": 0.0085,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 12,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "glycolic acid",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 74,
+  "prompt": "Simulate skin absorption of niacinamide from a light moisturising cream at pH 5.3, 35 C, dose 9.8 µL applied over 2 cm², for 8 hours, applied as a wash-off product and removed after 10 minutes, in vivo, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 5.3,
+   "dose_ml_cm2": 0.004900000000000001,
+   "temperature_c": 35,
+   "duration_h": 8,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "niacinamide",
+   "formulation_name": "a light moisturising cream",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 75,
+  "prompt": "Simulate skin absorption of lactic acid from a hydroalcoholic lotion at pH 4.3, 32 C, dose 7.7 µL/cm², for 6 hours, applied as a wash-off product and removed after 5 minutes, in vivo, unoccluded.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 4.3,
+   "dose_ml_cm2": 0.0077,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": 0.08333333333333333,
+   "permeant_name": "lactic acid",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 76,
+  "prompt": "Simulate skin absorption of niacinamide from an aqueous gel at pH 5.8, 310 K, dose 16.75 µL applied over 2.5 cm², for 6 h, for 10 minutes before being wiped off with a damp cloth, on the backs of healthy adult subjects, non-occluded, with the surface open to the atmosphere.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 5.8,
+   "dose_ml_cm2": 0.0067,
+   "temperature_c": 36.85000000000002,
+   "duration_h": 6,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "niacinamide",
+   "formulation_name": "an aqueous gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 77,
+  "prompt": "Simulate skin absorption of caffeine from an oil-in-water emulsion at pH 7.5, 35 °C, dose 18.75 µL applied over 2.5 cm², for 90 minutes, for 10 minutes, after which the site was washed with water, in healthy volunteers, with tape stripping at the end of the exposure, with the donor compartment left open to the air.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 7.5,
+   "dose_ml_cm2": 0.0075,
+   "temperature_c": 35,
+   "duration_h": 1.5,
+   "removal_time_h": 0.16666666666666666,
+   "permeant_name": "caffeine",
+   "formulation_name": "an oil-in-water emulsion",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 78,
+  "prompt": "Simulate skin absorption of ensulizole from a glycerol-containing gel at pH 7.5, 305 K, dose 1.4 µL/cm², for 1 days, for 15 minutes before being wiped off with a damp cloth, on the backs of healthy adult subjects, with the application site uncovered throughout.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 7.5,
+   "dose_ml_cm2": 0.0014,
+   "temperature_c": 31.850000000000023,
+   "duration_h": 24.0,
+   "removal_time_h": 0.25,
+   "permeant_name": "ensulizole",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 79,
+  "prompt": "Simulate skin absorption of naproxen from a glycerol-containing gel at pH 7.6, 37 °C, dose 3.4 uL/cm², for 2 days, as a shampoo base, rinsed after 30 minutes, in healthy volunteers, with tape stripping at the end of the exposure, non-occluded, with the surface open to the atmosphere.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 7.6,
+   "dose_ml_cm2": 0.0034,
+   "temperature_c": 37,
+   "duration_h": 48.0,
+   "removal_time_h": 0.5,
+   "permeant_name": "naproxen",
+   "formulation_name": "a glycerol-containing gel",
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 80,
+  "prompt": "Simulate skin absorption of lactic acid from a hydroalcoholic lotion at pH 3.2, 32 °C, dose 0.0181 mL/cm², for 6 h, for 30 minutes, after which the site was washed with water, on the backs of healthy adult subjects, with the donor compartment left open to the air.",
+  "reference": {
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "pH": 3.2,
+   "dose_ml_cm2": 0.0181,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": 0.5,
+   "permeant_name": "lactic acid",
+   "formulation_name": "a hydroalcoholic lotion",
+   "dose_regime": "finite"
+  }
+ }
+]

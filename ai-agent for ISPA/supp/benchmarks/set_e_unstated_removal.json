@@ -1,0 +1,112 @@
+[
+ {
+  "id": 1,
+  "group": "must_ask",
+  "reference": {
+   "permeant_name": "lactic acid",
+   "pH": 3.8,
+   "dose_ml_cm2": 0.003,
+   "temperature_c": 32.0,
+   "duration_h": null,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "occluded"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 3.8, 32 °C, dose 3 µL/cm², applied to the skin for 30 minutes, in vitro in Franz cells, under occlusion."
+ },
+ {
+  "id": 2,
+  "group": "must_ask",
+  "reference": {
+   "permeant_name": "glycolic acid",
+   "pH": 4.0,
+   "dose_ml_cm2": 0.005,
+   "temperature_c": 32.0,
+   "duration_h": 6.0,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Glycolic acid in an aqueous gel, pH 4.0, 32 °C, 5 µL/cm². The product was in contact with the skin for 15 minutes and absorption was followed for a total of 6 h. In vitro, donor compartment open to the air."
+ },
+ {
+  "id": 3,
+  "group": "must_ask",
+  "reference": {
+   "permeant_name": "caffeine",
+   "pH": 6.0,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 32.0,
+   "duration_h": 24.0,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "occluded"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Caffeine from an aqueous gel at pH 6.0, 4 µL/cm², 32 °C, applied for 10 minutes, with receptor fluid sampled over 24 h. In vitro, occluded."
+ },
+ {
+  "id": 4,
+  "group": "must_ask",
+  "reference": {
+   "permeant_name": "salicylic acid",
+   "pH": 5.0,
+   "dose_ml_cm2": 0.002,
+   "temperature_c": 32.0,
+   "duration_h": 8.0,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "In vitro permeation test. Test item: salicylic acid, 2 µL/cm² of a pH 5.0 lotion, dermatomed human skin, 32 °C, non-occluded, exposure period 8 h."
+ },
+ {
+  "id": 5,
+  "group": "must_not_ask",
+  "reference": {
+   "permeant_name": "niacinamide",
+   "pH": 5.5,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 32.0,
+   "duration_h": 8.0,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded"
+  },
+  "expect_clarify": [],
+  "prompt": "Niacinamide cream, pH 5.5, 4 µL/cm², 32 °C, 8 h, in vitro, occluded. The film was deliberately not disturbed at any point during the exposure and nothing was taken off the surface."
+ },
+ {
+  "id": 6,
+  "group": "must_not_ask",
+  "reference": {
+   "permeant_name": "ensulizole",
+   "pH": 7.0,
+   "dose_ml_cm2": 0.006,
+   "temperature_c": 32.0,
+   "duration_h": 4.0,
+   "removal_time_h": 0.03333333333333333,
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded"
+  },
+  "expect_clarify": [],
+  "prompt": "Ensulizole in a cleansing base, pH 7.0, 6 µL/cm², 32 °C, in vitro, unoccluded. The product was rinsed from the skin after 120 seconds and absorption was followed for 4 h."
+ }
+]

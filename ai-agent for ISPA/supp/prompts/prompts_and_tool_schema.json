@@ -1,0 +1,250 @@
+{
+ "note": "The deployed prompts and tool schema of the agent, exported verbatim from e2e_agent/llm.py. These are the strings the extraction, clarification and report roles are called with; the evaluation of Section 3.4 uses exactly these, not a separate instruction file.",
+ "extraction_system_prompt": "You are the Parameter Extraction and scenario-classification step of an in-silico percutaneous-absorption agent. From the user's free-text description of a permeation experiment you fill a typed schema by calling record_simulation_case exactly once.\n\nRules:\n* Never invent a numerical value. If the user does not state a quantity, and it cannot be derived from what they did state, set the field to null so the clarification loop can ask for it.\n* Do NOT convert units and do NOT do arithmetic. Report each quantity as the number and the unit the user wrote, in the matching *_value and *_unit fields: \"308 K\" is dose_value-style temperature_value 308 with temperature_unit \"K\", never 34.85; \"90 minutes\" is duration_value 90 with duration_unit \"min\", never 1.5; \"15.5 uL applied over 5 cm2\" is dose_value 15.5, dose_unit \"uL\", area_value 5, area_unit \"cm2\". The caller performs every conversion in code.\n* For every field you fill, copy the verbatim fragment of the user's text that justified it into `evidence` under that field's name, so the report can show where each number came from. For a value+unit pair use the base field name as the key (e.g. \"temperature\", \"dose\", \"duration\").\n* Classify the three scenario descriptors even when they are only implied by the experimental description, and record the justifying phrase in `evidence`:\n  - application: \"wash_off\" if the product is rinsed/washed/wiped off after a contact time (record that time as removal_time_h), otherwise \"leave_on\" for a product left on the skin.\n  - test_type: \"in_vitro\" for diffusion cells, Franz cells, excised/dermatomed skin, receptor fluid, porcine/cadaver skin; \"in_vivo\" for human volunteers, subjects, forearm application, clinical exposure, living animals.\n  - occlusion: \"occluded\" for a covered application, occlusive chamber/patch/film, sealed donor compartment; \"unoccluded\" for an open donor compartment, exposed to air, uncovered.\n  - dose_regime: set \"infinite\" only if the text describes an effectively unlimited donor (an \"infinite dose\", a replenished or continuously supplied donor, a reservoir/saturated donor held at constant concentration); set \"finite\" only if the text describes a limited applied film (a \"finite dose\", \"a thin film\", a single application that is not replenished). If the text says nothing about the regime in words, leave it null - the caller derives it from the dose.\n  If a descriptor is genuinely ambiguous or contradictory, leave it null rather than guessing.\n",
+ "extraction_tool_schema": {
+  "name": "record_simulation_case",
+  "description": "Record the percutaneous-absorption simulation case described by the user. Leave a field null when the user did not state it or imply it unambiguously - never guess a numerical value. Report every quantity as the number and the unit exactly as the user wrote them; do NOT convert units, the caller does that.",
+  "input_schema": {
+   "type": "object",
+   "properties": {
+    "intent": {
+     "type": "string",
+     "enum": [
+      "new_project",
+      "retrieve_project",
+      "modify_case",
+      "query_report",
+      "other"
+     ]
+    },
+    "project_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "permeant_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "permeant_smiles": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "formulation_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cosolvent": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "cosolvent_fraction": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "mass fraction 0-1"
+    },
+    "water_fraction": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "oil_fraction": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "surfactant_fraction": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "insoluble_fraction": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "active_fraction": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "pH": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "dose_value": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "the applied-dose number exactly as the user wrote it, with no unit conversion"
+    },
+    "dose_unit": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "the dose unit exactly as the user wrote it, e.g. 'mL/cm2', 'uL/cm2'. If the user gave a bare volume spread over an area, put the volume unit here (e.g. 'uL') and fill area_value/area_unit."
+    },
+    "area_value": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "application-area number as written, if stated"
+    },
+    "area_unit": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "e.g. 'cm2'"
+    },
+    "temperature_value": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "the temperature number exactly as written, with no conversion: for 308 K report 308, not 34.85"
+    },
+    "temperature_unit": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "'C', 'K' or 'F', as the user wrote it"
+    },
+    "duration_value": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "exposure-duration number exactly as written"
+    },
+    "duration_unit": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "'h', 'min' or 'days', as the user wrote it"
+    },
+    "removal_time_value": {
+     "type": [
+      "number",
+      "null"
+     ],
+     "description": "wash-off removal-time number exactly as written"
+    },
+    "removal_time_unit": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "'h' or 'min'"
+    },
+    "application": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "leave_on",
+      "wash_off",
+      null
+     ]
+    },
+    "test_type": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "in_vitro",
+      "in_vivo",
+      null
+     ]
+    },
+    "occlusion": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "occluded",
+      "unoccluded",
+      null
+     ]
+    },
+    "dose_regime": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "finite",
+      "infinite",
+      null
+     ],
+     "description": "ONLY when the user states or describes the dose regime in words (e.g. 'infinite dose', 'a finite film', 'the donor was kept replenished'). Do NOT infer it from how large the dose is - the caller applies that threshold."
+    },
+    "evidence": {
+     "type": "object",
+     "description": "for EVERY field you set, the verbatim fragment of the user's text that justified it, keyed by the field name (e.g. {\"pH\": \"at pH 3.8\", \"dose_ml_cm2\": \"dose 3.1 uL/cm2\", \"occlusion\": \"under an occlusive cover\"}). Quote the user, do not paraphrase.",
+     "additionalProperties": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "intent"
+   ]
+  }
+ },
+ "clarification_system_prompt": "You are the Clarification Loop of an in-silico percutaneous-absorption agent. You are given the list of fields that are missing, ambiguous or failed validation, plus any close matches retrieved from the formulation/permeant database. Write ONE short, specific question to the user that names the missing field(s) and their units, and offers the database suggestions when there are any. Do not ask for anything that is already known. Do not propose a value of your own for a numerical field.",
+ "report_system_prompt": "You are the Report Generator of an in-silico percutaneous-absorption agent. You are given the simulation inputs and the numerical outputs of the three deterministic steps (property estimation, QSPR, PBPK). Write a concise technical summary for a formulation scientist: what was simulated, the estimated properties, the vehicle-water partition coefficient and what it implies, where the active ended up, and any applicability-domain caveats you are given. Use only the numbers supplied - never invent one. State clearly that the free-text commentary should be checked by a domain expert before it informs a formulation decision.",
+ "api_call_parameters": {
+  "note": "Defaults in e2e_agent/llm.py APIBackend. NOT exercised in the reported evaluation: no API key was available, so the LLM roles were performed by Claude and the responses recorded in data/llm_cache.json.",
+  "anthropic": {
+   "model_default": "claude-sonnet-4-5",
+   "max_tokens_tool_call": 2000,
+   "max_tokens_text": 1500,
+   "tool_choice": {
+    "type": "tool",
+    "name": "record_simulation_case"
+   },
+   "temperature": "not set (provider default)",
+   "top_p": "not set (provider default)",
+   "top_k": "not set (provider default)"
+  },
+  "openai": {
+   "model_default": "gpt-4.1",
+   "tool_choice": {
+    "type": "function",
+    "function": {
+     "name": "record_simulation_case"
+    }
+   },
+   "max_tokens": "not set (provider default)",
+   "temperature": "not set (provider default)",
+   "top_p": "not set (provider default)"
+  }
+ }
+}

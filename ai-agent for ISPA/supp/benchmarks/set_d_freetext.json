@@ -1,0 +1,547 @@
+[
+ {
+  "id": 1,
+  "reference": {
+   "permeant_name": "niacinamide",
+   "pH": 5.4,
+   "dose_ml_cm2": 0.005,
+   "temperature_c": 32,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Hi - we've got a 2% niacinamide o/w emulsion, pH 5.4, and I need to know how much gets through in 8 hours. It's a leave-on face cream, 5 µL/cm², Franz cells with human skin, donor left open to the air. 32 °C."
+ },
+ {
+  "id": 2,
+  "reference": {
+   "permeant_name": "salicylic acid",
+   "pH": 3.6,
+   "dose_ml_cm2": null,
+   "temperature_c": 32,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": null
+  },
+  "expect_clarify": [
+   "dose_ml_cm2"
+  ],
+  "prompt": "In vitro dermal absorption study per OECD TG 428. Test item: salicylic acid in a hydroalcoholic lotion at pH 3.6. Applied dose 2 mg/cm² to dermatomed human skin in static Franz cells, 32 ± 1 °C, non-occluded, 24 h exposure, no wash-off step."
+ },
+ {
+  "id": 3,
+  "reference": {
+   "permeant_name": "caffeine",
+   "pH": 6.2,
+   "dose_ml_cm2": 0.005,
+   "temperature_c": 32,
+   "duration_h": null,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "duration_h"
+  ],
+  "prompt": "I'm running some caffeine permeation experiments for my thesis. The gel is aqueous, pH 6.2, I put 10 µL on each 2 cm² cell and leave it overnight under Parafilm. Porcine ear skin, flow-through cells, 32 degrees. How much ends up in the receptor?"
+ },
+ {
+  "id": 4,
+  "reference": {
+   "permeant_name": "lactic acid",
+   "pH": 3.8,
+   "dose_ml_cm2": null,
+   "temperature_c": null,
+   "duration_h": null,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": null,
+   "dose_regime": null
+  },
+  "expect_clarify": [
+   "dose_ml_cm2",
+   "temperature_c",
+   "duration_h",
+   "occlusion"
+  ],
+  "prompt": "Can you tell me how much of the lactic acid in our new exfoliating toner actually gets absorbed? It's about 4% lactic acid, the pH is 3.8, and people just leave it on. We tested it on volunteers' forearms."
+ },
+ {
+  "id": 5,
+  "reference": {
+   "permeant_name": "ibuprofen",
+   "pH": 5.0,
+   "dose_ml_cm2": 0.006,
+   "temperature_c": 35,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "ibuprofen / PG solution / pH 5.0 / 35 C / 6 uL per cm2 / 12 h / leave-on / Franz, human epidermis / occluded"
+ },
+ {
+  "id": 6,
+  "reference": {
+   "permeant_name": "glycolic acid",
+   "pH": 4.0,
+   "dose_ml_cm2": 0.5,
+   "temperature_c": 32,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "infinite"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Study SD-2291. Glycolic acid, aqueous gel, pH 4.0. Infinite dose conditions, 0.5 mL/cm² applied to split-thickness human skin in Franz cells at 32 °C under occlusion for 24 hours; donor replenished at six-hourly intervals."
+ },
+ {
+  "id": 7,
+  "reference": {
+   "permeant_name": "benzophenone-3",
+   "pH": 6.0,
+   "dose_ml_cm2": 0.002,
+   "temperature_c": 30,
+   "duration_h": 4,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Simulate percutanous absorbtion of benzophenone-3 from a sunscreen emulsion, pH 6.0, 2 mg/cm2 - sorry, I mean 2 µL/cm², applied to volunteers' backs, left uncoverd, 30 degC, 4 hours."
+ },
+ {
+  "id": 8,
+  "reference": {
+   "permeant_name": "naproxen",
+   "pH": 6.5,
+   "dose_ml_cm2": 0.005,
+   "temperature_c": 32,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": null,
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "occlusion",
+   "application"
+  ],
+  "prompt": "Naproxen gel, pH 6.5, 32 °C, 5 µL/cm², 8 h, applied under an occlusive patch with the donor chamber left open to the air, in vitro on human skin."
+ },
+ {
+  "id": 9,
+  "reference": {
+   "permeant_name": "salicylic acid",
+   "pH": 4.0,
+   "dose_ml_cm2": 0.003,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Our serum contains niacinamide and 1% salicylic acid. I only care about the salicylic acid here. pH 4.0, silicone serum, 3 µL/cm², 6 h at 32 °C, leave-on, in vitro, unoccluded."
+ },
+ {
+  "id": 10,
+  "reference": {
+   "permeant_name": "caffeine",
+   "pH": 6.0,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 32,
+   "duration_h": 0.5,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Caffeine, aqueous gel, pH 6.0, 4 µL/cm², 32 °C, in vitro, occluded, leave-on. Exposure 1800 seconds."
+ },
+ {
+  "id": 11,
+  "reference": {
+   "permeant_name": "ensulizole",
+   "pH": 7.0,
+   "dose_ml_cm2": 0.006,
+   "temperature_c": null,
+   "duration_h": 3,
+   "removal_time_h": 0.03333333333333333,
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "temperature_c"
+  ],
+  "prompt": "Ensulizole in a surfactant cleansing base, pH 7.0. 6 µL/cm², rinsed off after 2 minutes, in vitro Franz cells, unoccluded, 3 h total. Run at room temperature."
+ },
+ {
+  "id": 12,
+  "reference": {
+   "permeant_name": "lactic acid",
+   "pH": 3.8,
+   "dose_ml_cm2": 0.125,
+   "temperature_c": 37,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "infinite"
+  },
+  "expect_clarify": [],
+  "prompt": "Lactic acid, o/w emulsion at pH 3.8. We applied 0.5 mL over a 4 cm² area, left it on for 24 h at 37 °C, occluded, in vitro."
+ },
+ {
+  "id": 13,
+  "reference": {
+   "permeant_name": "nicotinamide",
+   "pH": 7.0,
+   "dose_ml_cm2": 0.02,
+   "temperature_c": 34.85,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "infinite"
+  },
+  "expect_clarify": [],
+  "prompt": "Nicotinamide, glycerol gel, pH 7.0, 308 K, in vitro, occluded, 12 h, leave-on. Dose 20 µL/cm². The donor solution was sampled and topped back up every two hours so the applied concentration stayed constant."
+ },
+ {
+  "id": 14,
+  "reference": {
+   "permeant_name": "ibuprofen",
+   "pH": 5.5,
+   "dose_ml_cm2": 0.003,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "What fraction of the ibuprofen would reach the receptor if we used a 3 µL/cm² dose of our pH 5.5 lotion on dermatomed human skin at 32 °C for 6 hours, unoccluded, and without washing it off?"
+ },
+ {
+  "id": 15,
+  "reference": {
+   "permeant_name": "glycolic acid",
+   "pH": 4.2,
+   "dose_ml_cm2": null,
+   "temperature_c": 32,
+   "duration_h": 4,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "dose_regime": null
+  },
+  "expect_clarify": [
+   "dose_ml_cm2"
+  ],
+  "prompt": "Apply our 5% w/w glycolic acid cream, pH 4.2, to volunteer forearms for 4 h at 32 °C, uncovered, no rinse. How much goes in?"
+ },
+ {
+  "id": 16,
+  "reference": {
+   "permeant_name": "salicylic acid",
+   "pH": 5.5,
+   "dose_ml_cm2": 0.008,
+   "temperature_c": 35,
+   "duration_h": 6,
+   "removal_time_h": 0.025,
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Shampoo base with 2% salicylic acid, pH 5.5. Consumers rinse it off after about 90 seconds. 8 µL/cm², 35 °C, in vivo on the scalp, unoccluded, and we followed absorption over 6 h."
+ },
+ {
+  "id": 17,
+  "reference": {
+   "permeant_name": "caffeine",
+   "pH": 6.0,
+   "dose_ml_cm2": 0.005,
+   "temperature_c": 32.22222222222222,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Caffeine, aqueous gel, pH 6, 90 °F, 5 µL/cm², 8 h, leave-on, in vitro, occluded."
+ },
+ {
+  "id": 18,
+  "reference": {
+   "permeant_name": null,
+   "pH": 5.0,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "permeant"
+  ],
+  "prompt": "Our pH 5.0 cream, 4 µL/cm², 6 h, 32 °C, leave-on, in vitro, unoccluded. How much gets in?"
+ },
+ {
+  "id": 19,
+  "reference": {
+   "permeant_name": "lactic acid",
+   "pH": 3.8,
+   "dose_ml_cm2": 0.002,
+   "temperature_c": null,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "temperature_c",
+   "application"
+  ],
+  "prompt": "We repeated the Kraeling in vivo design. Lactic acid at pH 3.8 in an o/w emulsion, 2 µL/cm², applied to the forearms of volunteers under an occlusive chamber. Sampling at 24 h."
+ },
+ {
+  "id": 20,
+  "reference": {
+   "permeant_name": "naproxen",
+   "pH": 6.8,
+   "dose_ml_cm2": 0.3,
+   "temperature_c": 32,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "infinite"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Standard infinite-dose IVPT: naproxen, PG solution, pH 6.8, 32 °C, 24 h, occluded, 0.3 mL/cm²."
+ },
+ {
+  "id": 21,
+  "reference": {
+   "permeant_name": "ensulizole",
+   "pH": 7.2,
+   "dose_ml_cm2": 0.002,
+   "temperature_c": 32,
+   "duration_h": null,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "duration_h"
+  ],
+  "prompt": "Ensulizole, aqueous gel, pH 7.2, 2 µL/cm², 32 °C, in vitro, unoccluded, leave-on, for a couple of hours."
+ },
+ {
+  "id": 22,
+  "reference": {
+   "permeant_name": "ibuprofen",
+   "pH": 5.5,
+   "dose_ml_cm2": 0.02,
+   "temperature_c": null,
+   "duration_h": 12,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vivo",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "temperature_c"
+  ],
+  "prompt": "A 10 cm² patch loaded with 200 µL of 2% ibuprofen gel, pH 5.5, worn for 12 h at skin temperature, occluded, on volunteers."
+ },
+ {
+  "id": 23,
+  "reference": {
+   "permeant_name": "glycolic acid",
+   "pH": 3.9,
+   "dose_ml_cm2": 0.007,
+   "temperature_c": 32,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Occluded. In vitro. Human cadaver skin. 24 hr. 32 degrees celcius. pH 3.9. Glycolic acid, aqueous gel. 7 microlitres per square centimetre. Leave on."
+ },
+ {
+  "id": 24,
+  "reference": {
+   "permeant_name": "salicylic acid",
+   "pH": 5.0,
+   "dose_ml_cm2": 0.012,
+   "temperature_c": 37,
+   "duration_h": 24,
+   "removal_time_h": 0.0125,
+   "application": "wash_off",
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Body wash containing 1% salicylic acid, pH 5.0. In use it contacts the skin for 45 seconds before rinsing, but we monitored absorption for 24 h afterwards. 12 µL/cm², 37 °C, in vivo, unoccluded."
+ },
+ {
+  "id": 25,
+  "reference": {
+   "permeant_name": "benzophenone-3",
+   "pH": 6.4,
+   "dose_ml_cm2": 0.002,
+   "temperature_c": 31,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vivo",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Twenty subjects applied the pH 6.4 benzophenone-3 lotion, 2 µL/cm², to the upper back, uncovered, for 6 h at an ambient skin temperature of 31 °C."
+ },
+ {
+  "id": 26,
+  "reference": {
+   "permeant_name": "caffeine",
+   "pH": 6.0,
+   "dose_ml_cm2": 0.25,
+   "temperature_c": 32,
+   "duration_h": 24,
+   "removal_time_h": null,
+   "application": null,
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [
+   "application"
+  ],
+  "prompt": "Caffeine, aqueous gel, pH 6.0, 32 °C, in vitro, occluded, 24 h. A single finite application of 0.25 mL/cm², not replenished."
+ },
+ {
+  "id": 27,
+  "reference": {
+   "permeant_name": "lactic acid",
+   "pH": 3.8,
+   "dose_ml_cm2": 0.003,
+   "temperature_c": 32,
+   "duration_h": 6,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Please to simulate the absorption of lactic acid, the emulsion is oil in water, pH is 3.8, temperature 32 degree, dose is 3 microliter per cm2, time 6 hour, not wash, in vitro experiment, with occlusion."
+ },
+ {
+  "id": 28,
+  "reference": {
+   "permeant_name": "nicotinamide",
+   "pH": 6.7,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 32,
+   "duration_h": 8,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Batch L-2291-B, supplied by Croda, QC passed 14 March. Formulation: aqueous gel, pH 6.7, containing nicotinamide. Apply 4 µL/cm² to porcine ear skin in flow-through cells, 32 °C, 8 h, unoccluded, no rinse."
+ },
+ {
+  "id": 29,
+  "reference": {
+   "permeant_name": "glycolic acid",
+   "pH": 5.8,
+   "dose_ml_cm2": 0.01,
+   "temperature_c": 35,
+   "duration_h": 12,
+   "removal_time_h": 0.016666666666666666,
+   "application": "wash_off",
+   "test_type": "in_vitro",
+   "occlusion": "unoccluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Face cleanser, pH 5.8, with 2% glycolic acid. Washed off with water after 60 s. We followed absorption for 12 h. 10 µL/cm², 35 °C, in vitro, unoccluded."
+ },
+ {
+  "id": 30,
+  "reference": {
+   "permeant_name": "ensulizole",
+   "pH": 7.5,
+   "dose_ml_cm2": 0.004,
+   "temperature_c": 36.85,
+   "duration_h": 48,
+   "removal_time_h": null,
+   "application": "leave_on",
+   "test_type": "in_vitro",
+   "occlusion": "occluded",
+   "dose_regime": "finite"
+  },
+  "expect_clarify": [],
+  "prompt": "Ensulizole, propylene glycol solution, pH 7.5, 310 K, dose 0.004 mL/cm², 2 days, leave-on, in vitro, occluded."
+ }
+]

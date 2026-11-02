@@ -1,0 +1,142 @@
+[
+ {
+  "id": 1,
+  "prompt": "Simulate skin absorption of caffeine from an aqueous gel at pH 6.0, 32 °C, dose 5 µL/cm², for 8 h, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 2,
+  "prompt": "Simulate skin absorption of ibuprofen from a hydroalcoholic lotion at pH 5.5, 32 °C, dose 2.5 µL/cm², for 12 h, left on the skin, in vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 3,
+  "prompt": "Simulate skin absorption of niacinamide from a light moisturising cream at pH 5.0, 305 K, dose 0.004 mL/cm², for 6 h, as a leave-on serum that stays in place, in vitro, with the donor compartment left open to the air.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 4,
+  "prompt": "Simulate skin absorption of salicylic acid from a propylene-glycol solution at pH 3.5, 35 °C, 9 µL applied over 3 cm², for 240 minutes, with no rinsing step at any point, in vivo, left uncovered.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 5,
+  "prompt": "Simulate skin absorption of caffeine from an aqueous gel at pH 6.0, 32 °C, dose 0.2 mL/cm², for 24 h, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 6,
+  "prompt": "Simulate skin absorption of nicotinamide from a glycerol-containing gel at pH 7.0, 308 K, dose 150 µL/cm², for 12 h, left on the skin, in vitro, with the donor compartment capped and sealed.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 7,
+  "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 3.8, 32 °C, 2 mL applied over 2 cm², for 24 h, and allowed to remain on the skin throughout, in vitro, under an occlusive film applied over the treated area.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 8,
+  "prompt": "Simulate skin absorption of glycolic acid from an aqueous gel at pH 4.0, 37 °C, dose 0.5 mL/cm², for 1 days, as a moisturiser that is not removed, in vitro, sealed under a Parafilm-covered patch.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 9,
+  "prompt": "Simulate skin absorption of naproxen from a silicone-based serum at pH 6.5, 32 °C, dose 4 µL/cm², for 8 h under finite-dose conditions, applied as a leave-on product, in vitro, unoccluded.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 10,
+  "prompt": "Simulate skin absorption of benzophenone-3 from a light moisturising cream at pH 5.8, 305 K, dose 2 µL/cm², for 6 h as a single application that is not replenished, left on the skin, in vivo, with the application site uncovered throughout.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 11,
+  "prompt": "Simulate skin absorption of ensulizole from a surfactant-rich cleansing base at pH 7.0, 32 °C, dose 6 µL/cm², applied as a thin film for 4 h, then rinsed off with warm water after 15 minutes, in vitro, unoccluded.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 12,
+  "prompt": "Simulate skin absorption of caffeine from a propylene-glycol solution at pH 6.0, 37 °C, dose 0.003 mL/cm², for 12 h; this is a finite dose and the donor is not topped up. In vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 13,
+  "prompt": "Simulate skin absorption of caffeine from an aqueous gel at pH 6.0, 32 °C, dose 0.25 mL/cm², for 24 h under infinite-dose conditions, applied as a leave-on product, in vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 14,
+  "prompt": "Simulate skin absorption of nicotinamide from a glycerol-containing gel at pH 7.4, 308 K, dose 0.3 mL/cm², for 24 h with the donor compartment replenished throughout, left on the skin, in vitro, sealed under a Parafilm-covered patch.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 15,
+  "prompt": "Simulate skin absorption of salicylic acid from a propylene-glycol solution at pH 3.2, 32 °C, dose 0.4 mL/cm², for 12 h from a saturated reservoir held at constant concentration, and allowed to remain on the skin throughout, in vitro, with the donor compartment capped and sealed.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 16,
+  "prompt": "Simulate skin absorption of ibuprofen from a hydroalcoholic lotion at pH 5.0, 310 K, dose 0.6 mL/cm², for 24 h; the donor solution was continuously refreshed so the applied concentration did not fall. In vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 17,
+  "prompt": "Simulate skin absorption of caffeine from an aqueous gel at pH 6.0, 32 °C, dose 8 µL/cm², for 24 h, with the donor compartment replenished throughout so the applied concentration is held constant, left on the skin, in vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 18,
+  "prompt": "Simulate skin absorption of glycolic acid from an aqueous gel at pH 3.8, 308 K, dose 0.01 mL/cm², for 12 h under infinite-dose conditions, applied as a leave-on product, in vitro, sealed under a Parafilm-covered patch.",
+  "reference": {
+   "dose_regime": "infinite"
+  }
+ },
+ {
+  "id": 19,
+  "prompt": "Simulate skin absorption of niacinamide from a light moisturising cream at pH 5.2, 32 °C, dose 0.3 mL/cm², for 24 h as a single application that is not replenished, left on the skin, in vitro, under occlusion.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ },
+ {
+  "id": 20,
+  "prompt": "Simulate skin absorption of lactic acid from an oil-in-water emulsion at pH 3.8, 37 °C, dose 0.2 mL/cm², applied once as a finite dose and left in place for 24 h, in vitro, with the donor compartment left open to the air.",
+  "reference": {
+   "dose_regime": "finite"
+  }
+ }
+]
